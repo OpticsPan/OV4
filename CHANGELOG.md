@@ -6,6 +6,19 @@
 
 ---
 
+<a name="2026-11-24-nine-subsystems-doc-v2"></a>
+
+## 2026-11-24　发布九大核心子系统验收指标推导与计算说明书 v2（新增 8 篇一手文献全核验版）
+
+- **详细变更日志**：[2026-11-24-nine-subsystems-doc-v2-new-refs-verification.md](changes/2026-11-24-nine-subsystems-doc-v2-new-refs-verification.md)
+- **正式交付入口（完整保留 v1）**：
+  - [九大核心子系统验收指标推导与计算说明书 MD v2](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md)
+  - [九大核心子系统验收指标推导与计算说明书 PDF v2（19 页 / 35 书签 / STIX 矢量公式 / 第 7–9 章横版宽表 / 零孤行尾页）](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.pdf)
+  - [PDF 导出构建脚本 v2](outputs/code/build_9subsys_doc_pdf_v2.py)
+- **一手文献核验与修订要点**：通读并逐页核验 `参考文献_新增\` 全部 8 篇一手论文/专利（`[N1] US20080174858A1`、`[N2] SPIE 6154`、`[N3] SPIE 5962`、`[N4] SPIE 11327`、`[N5] SPIE 7973`、`[N6] SPIE 8326`、`[N7] JM3 2014`、`[N8] 2024 IEEE ECC`）：① 确证 `US20080174858A1` Table 3 `NA=1.35 / 26×5.5 mm` 原表铁证；② 引入 Heertjes 2024 ECC Theorem 2.1 / Prop. 3.1 补齐 `MA`/`MSD` 互补功率谱公式、白噪声下限 `0.050 nm`（`8 mm` 为 `0.042 nm`）解析及 FAT PSD/CPS 条款；③ 用 IBM/ASML SPIE 8326 Table 4 实证 `Z10 = -0.88 nm/nm`（与本文 Abbe 仿真 `0.905` 仅差 2.8%）与高透热漂 `>6 nm`；④ 引入 Zeiss/ASML 双平面操纵器正交矩阵、`79×17` 高密调校网、`12→15→18→19` 参数演进与 5 机 MMO `3.0–3.8 / 2.5 nm` 对标，并在 `.gitignore` 中排除 `/参考文献_新增/`；全仓 Markdown 相对路径审计 0 错。
+
+---
+
 <a name="2026-11-24-nine-subsystems-doc-v1"></a>
 
 ## 2026-11-24　新增九大核心子系统验收指标推导与计算说明书 v1（含 5.5 mm 狭缝、K3 Range 与 K0 专项调研核定）
