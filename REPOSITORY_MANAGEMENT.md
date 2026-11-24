@@ -35,8 +35,9 @@
 | `outputs/README.md` | 正式成果按类型与主题分类索引 | 跟踪 |
 | `outputs/reports/` | 正式 Markdown 报告、正式 PDF 报告及审阅草稿 | 跟踪 |
 | `outputs/tables/` | 正式可计算 Excel 规格表与误差预算表（`.xlsx`） | 跟踪 |
+| `outputs/presentations/` | 正式汇报演示文稿（`.pptx`，含原始论文截图与仿真图表证据链） | 跟踪 |
 | `outputs/images/` | 正式技术插图、仿真曲线与示意图（白底高分辨率） | 跟踪 |
-| `outputs/code/` | 可复现光学/物理仿真脚本、Excel 构建脚本、PDF 导出脚本 | 跟踪 |
+| `outputs/code/` | 可复现光学/物理仿真脚本、Excel/PDF/PPTX 构建脚本 | 跟踪 |
 | `work/` | 本地临时计算、中间 JSON 缓存、浏览器打印临时文件 | 忽略（`.gitignore`） |
 | `参考文献-整理版/`、`参考文献-整理版-Markdown/` | 本机**只读原始参考文献库**（243 篇论文/专利 PDF 与 MinerU Markdown） | 忽略（`.gitignore`） |
 
@@ -120,7 +121,7 @@
 
 [返回目录](#contents)
 
-- [ ] 新增或更新的正式成果已按类型归档至 `outputs/reports/`、`outputs/tables/`、`outputs/images/` 或 `outputs/code/`，文件名带正确版本后缀 `_vN`。
+- [ ] 新增或更新的正式成果已按类型归档至 `outputs/reports/`、`outputs/tables/`、`outputs/presentations/`、`outputs/images/` 或 `outputs/code/`，文件名带正确版本后缀 `_vN`。
 - [ ] 所有 Markdown 内部链接均为相对路径，顶部导航、目录锚点与跨文件跳转均核验有效。
 - [ ] 若交付 Excel，已通过公式审计（0 个 `#REF!/#NAME?/#VALUE!/#DIV/0!`）且缓存值已更新。
 - [ ] 若交付 PDF，已核验总页数、目录页码、PDF 书签与宽表/公式视觉排版无截断。

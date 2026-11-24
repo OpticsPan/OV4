@@ -11,7 +11,7 @@
 2. **规范归档 1950i–1970Ci 档位 15 大类子系统验收规格 v1 成果**：
    - 将正式 Markdown 报告升级为 GitHub 网页阅读友好版，补齐顶部快捷导航、全 17 章稳定英文锚点目录、相对路径链接及 CommonMark 粗体排版修复，归档至 [NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v1.md](../outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v1.md)；
    - 将含 6 个工作表、430 个跨页动态公式的 Excel 规格与预算表归档至 [NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v1.xlsx](../outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v1.xlsx)；
-   - 归档三份可复现脚本：sim_zernike_ovl_v1.py（本地 `outputs/code/sim_zernike_ovl_v1.py`）、build_spec_excel_v1.py（本地 `outputs/code/build_spec_excel_v1.py`）、build_spec_pdf_v1.py（本地 `outputs/code/build_spec_pdf_v1.py`）；
+   - 归档三份可复现脚本：[sim_zernike_ovl_v1.py](../outputs/code/sim_zernike_ovl_v1.py)、[build_spec_excel_v1.py](../outputs/code/build_spec_excel_v1.py)、[build_spec_pdf_v1.py](../outputs/code/build_spec_pdf_v1.py)；
    - 清理根目录未版本化旧临时副本，保持只读原始参考文献库与 `开始阅读.html` 原封不动。
 3. **新增印刷级 PDF 正式报告**：
    - 通过 Chrome 无头渲染 + Matplotlib STIX 透明矢量公式 + PyMuPDF 双遍页码与书签写入，生成 24 页正式 PDF 报告 [NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v1.pdf](../outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v1.pdf)；
