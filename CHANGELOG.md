@@ -6,6 +6,21 @@
 
 ---
 
+<a name="2026-11-24-spec-budget-v2"></a>
+
+## 2026-11-24　发布 v2 深度验收升级版（WS/RS 单往返细则、WS Km 验收与狭缝逆卷积专页、物镜 8 维评价）
+
+- **详细变更日志**：[2026-11-24-spec-budget-v2-acceptance-deepdive_v2.md](changes/2026-11-24-spec-budget-v2-acceptance-deepdive_v2.md)
+- **正式交付入口（v2，完整保留全部 v1 文件）**：
+  - [逐条证据链演示文稿 PPTX v2（28 页 16:9 / 新增 6 页深度验收专题 + 3 张 260 DPI 新图）](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx)
+  - [Excel 动态预算与验收细则表 v2（9 表 / 686 公式 / Excel 实算 0 错）](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx)
+  - [Markdown 正式报告 v2（增补第 1.3–1.4、2.2–2.3、13.4、14.3–14.4 节）](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md)
+  - [PDF 正式报告 v2（30 页 / 45 书签 / STIX 透明矢量公式 / 第 13–15 章横版宽表）](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf)
+  - 可复现代码：[build_spec_excel_v2.py](outputs/code/build_spec_excel_v2.py) · [build_spec_pdf_v2.py](outputs/code/build_spec_pdf_v2.py) · [build_spec_pptx_v2.py](outputs/code/build_spec_pptx_v2.py)
+- **核验范围**：Excel v2 经 Microsoft Excel COM 重算确认 9 表 686 公式 `FormulaErrorsCount = 0`；PPTX v2 新增/修订页（P01/06/07/09/22/24/25/28）经 PowerPoint COM 导出高清 PNG 逐页视觉核验通过；PDF v2 30 页 45 书签 0 mathtext 警告并完成视觉抽检；全仓 Markdown 相对路径与锚点审计 0 错。
+
+---
+
 <a name="2026-11-24-spec-budget-pptx-v1"></a>
 
 ## 2026-11-24　新增 15 大类验收规格与逐条证据链 22 页 PPTX 及 4 份可复现脚本
