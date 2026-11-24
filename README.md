@@ -2,7 +2,7 @@
 
 本仓库（本机目录 `D:\work\OV4`，对应 GitHub `OpticsPan/OV4`）用于归档 ArF 液浸光刻机套刻误差预算、子系统验收规格推导、光学/物理仿真脚本、可计算 Excel 模型、正式 PDF 报告、逐条证据链 PPTX 演示文稿及完整变更历史。
 
-**快速导航**：[成果索引](outputs/README.md) · [最新演示文稿 PPTX v2](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx) · [最新正式报告 MD v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [最新正式报告 PDF v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf) · [最新 Excel 预算表 v2](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx) · [仓库管理规范](REPOSITORY_MANAGEMENT.md) · [用户偏好记录](USER_PREFERENCES.md) · [协作规则](AGENTS.md) · [总变更记录](CHANGELOG.md)
+**快速导航**：[成果索引](outputs/README.md) · [九大子系统计算说明书 MD](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.md) · [九大子系统说明书 PDF](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.pdf) · [演示文稿 PPTX v2](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx) · [Excel 预算表 v2](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx) · [总报告 v2 PDF](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf) · [仓库管理规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
 
 ---
 
@@ -14,6 +14,7 @@
 
 | 日期 | 变更内容 | 正式成果与日志链接 |
 | :--- | :--- | :--- |
+| 2026-11-24 | 新增 **九大核心子系统验收指标推导与计算说明书 v1**（覆盖 WS、RS、ENC、AA、TIS、PARIS、WS-iHOPC、Lens Zernike、Lens-iHOPC，逐指标阐明调研取整、估算与仿真计算过程），并完成 4 项深度调研核定：① 确证 NA=1.35 物镜真实狭缝尺寸为 `26×5.5 mm`；② 澄清 `1 ppm = 10 nm/cm` 并将物镜 `K3` 硬件 Range 重估为 `±15–25 ppm`；③ 结合 [100/114/251] 与第一性原理校核 Lens/WS `|K0|`；④ 附 7 篇外部高价值论文/专利手动下载清单。 | [九大子系统说明书 MD](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.md) · [九大子系统说明书 PDF](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.pdf) · [PDF 构建脚本](outputs/code/build_9subsys_doc_pdf_v1.py) · [变更日志](changes/2026-11-24-nine-subsystems-derivation-doc-and-audit_v1.md) |
 | 2026-11-24 | 发布 **v2 深度验收升级版**（完整保留 v1 全部文件）：新增 ① WS/RS 独立 6-DOF 验收必要性工程反驳论证与单程/往返重复性验收细则（含 150 m/s² 微滑移）；② WS 对 iHOPC（以 K4 为例）离线 ENC 遥测/在线曝光三级闭环审视与 8 mm 狭缝逆卷积专页图解；③ 投影物镜 K 参数补偿能力 8 维综合评价体系。同步升级 28 页 PPTX、9 表 686 公式 Excel（0 错）、30 页 PDF（45 书签）与 Markdown 报告。 | [演示文稿 PPTX v2](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx) · [Excel 预算表 v2](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx) · [正式报告 MD v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [正式报告 PDF v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf) · [v2 变更日志](changes/2026-11-24-spec-budget-v2-acceptance-deepdive_v2.md) |
 | 2026-11-24 | 将 15 大类子系统验收规格与误差预算表制作为 22 页 16:9 逐条证据链 PPTX（嵌入 25+ 张 OV4/ME3 原始论文截图、解析推导与 4 张 260 DPI 仿真/闭环图，全 22 页视觉检视通过），并同步归档 4 份可复现仿真与构建脚本。 | [正式演示文稿 PPTX](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v1.pptx) · [Excel 预算表](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v1.xlsx) · [PPTX 构建脚本](outputs/code/build_spec_pptx_v1.py) · [成果索引](outputs/README.md) · [变更日志](changes/2026-11-24-spec-budget-evidence-pptx_v1.md) |
 | 2026-11-24 | 归档 NXT:1950i–1970Ci 验收规格推导报告和动态预算表 v1。成果署名为反重力 Agent，GPT（Codex）执行归档。 | [Markdown 报告](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v1.md) · [PDF 报告](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v1.pdf) · [Excel 预算表](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v1.xlsx) · [本次归档记录](changes/2026-11-24-archive-nxt1950i-1970i-antigravity_v1.md) |
@@ -26,6 +27,7 @@
 
 | 交付形态 | 文件入口 | 说明 |
 | :--- | :--- | :--- |
+| **九大子系统推导说明书（MD / PDF）** | [说明书 MD v1](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.md) · [说明书 PDF v1](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.pdf) | 19 页 / 34 书签，专攻 WS/RS/ENC/AA/TIS/PARIS/WS-iHOPC/Zernike/Lens-iHOPC，含 5.5 mm 狭缝核定、K3 Range 重估、K0 校核与外部下载清单 |
 | **逐条证据链演示文稿（PPTX v2）** | [NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx) | 28 页 16:9 白底高清汇报版，保留 v1 全部 22 页证据链并新增 6 页深度验收专题（WS/RS 反驳与单往返细则、物镜 8 维评价、WS K4 审视、狭缝逆卷积三联图解） |
 | **动态公式 Excel 预算表（XLSX v2）** | [NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx) | 9 个工作表、686 个跨页动态公式（已由 Excel 实算 0 错），新增 Sheet 07–09（WS/RS 验收、WS iHOPC 与逆卷积计算器、物镜 8 维能力表） |
 | **综合推导报告（Markdown v2）** | [NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) | 覆盖 15 大类规格、全部四大深度专题公式推导与 FAT/SAT 细则（GitHub 网页直读） |

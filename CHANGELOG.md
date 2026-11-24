@@ -6,6 +6,19 @@
 
 ---
 
+<a name="2026-11-24-nine-subsystems-doc-v1"></a>
+
+## 2026-11-24　新增九大核心子系统验收指标推导与计算说明书 v1（含 5.5 mm 狭缝、K3 Range 与 K0 专项调研核定）
+
+- **详细变更日志**：[2026-11-24-nine-subsystems-derivation-doc-and-audit_v1.md](changes/2026-11-24-nine-subsystems-derivation-doc-and-audit_v1.md)
+- **正式交付入口**：
+  - [九大核心子系统验收指标推导与计算说明书 MD v1](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.md)（全 11 章，覆盖 WS、RS、ENC、AA、TIS、PARIS、WS-iHOPC、Lens Zernike、Lens-iHOPC）
+  - [九大核心子系统验收指标推导与计算说明书 PDF v1（19 页 / 34 书签 / STIX 矢量公式 / 第 7–9 章横版宽表）](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.pdf)
+  - [PDF 导出构建脚本](outputs/code/build_9subsys_doc_pdf_v1.py)
+- **核定要点与验证**：确证 NA=1.35 物镜真实离轴狭缝为 `26 × 5.5 mm`（Carl Zeiss `US 2008/0174858 A1` / `US 8,873,022 B2` + ASML `ME3 12-TT-L3-L3-ME` + Nikon [060]）；澄清 `1 ppm = 10 nm/cm` 并将 `K3` 硬件总 Range 重估为 `±15–25 ppm`（`±150–250 nm/cm`）；结合 [100/114/251] 与第一性原理校核 Lens/WS `|K0|` 并整理 7 篇外部论文/专利下载清单；PDF 视觉抽检通过（0 处公式回退、0 处未解析粗体），全仓 Markdown 相对链接审计 0 错。
+
+---
+
 <a name="2026-11-24-spec-budget-v2"></a>
 
 ## 2026-11-24　发布 v2 深度验收升级版（WS/RS 单往返细则、WS Km 验收与狭缝逆卷积专页、物镜 8 维评价）
