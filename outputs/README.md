@@ -1,10 +1,10 @@
 # OV4 成果索引
 
-[仓库首页](../README.md) · [仓库规范](../REPOSITORY_MANAGEMENT.md) · [用户偏好](../USER_PREFERENCES.md) · [协作规则](../AGENTS.md) · [总变更记录](../CHANGELOG.md)
+[仓库首页](../README.md) · [参考文献总目](../REFERENCES.md) · [仓库规范](../REPOSITORY_MANAGEMENT.md) · [用户偏好](../USER_PREFERENCES.md) · [协作规则](../AGENTS.md) · [总变更记录](../CHANGELOG.md)
 
 本页按成果类型与技术专题集中索引 `D:\work\OV4`（对应 GitHub `OpticsPan/OV4`）已归档的全部正式交付物。
 
-**最新更新 · 2026-11-24**　发布 **九大核心子系统验收指标推导与计算说明书 v2**（MD + 19 页 / 35 书签 PDF，已逐页核验 `参考文献_新增\` 全部 8 篇一手论文/专利 `[N1–N8]` 并升级 5.5 mm 狭缝铁证、Heertjes 频域定理与白噪下限、IBM/ASML 灵敏度交叉验证及双平面操纵器架构）。[v2 变更日志](../changes/2026-11-24-nine-subsystems-doc-v2-new-refs-verification.md) · [v1 变更日志](../changes/2026-11-24-nine-subsystems-derivation-doc-and-audit_v1.md)
+**最新更新 · 2026-11-25**　新增仓库级 **参考文献完整清单总目（[REFERENCES.md](../REFERENCES.md)）**，收录全部 251 份本地原件（含 `参考文献_新增/` 8 篇 `[N1–N8]` 与基线 243 份 `[003–266]`）及 SHA-256 指纹与引用状态。[本次变更日志](../changes/2026-11-25-reference-catalog-inventory_v1.md) · [说明书 v2 变更日志](../changes/2026-11-24-nine-subsystems-doc-v2-new-refs-verification.md)
 
 ## 按类型浏览（最新成果优先，完整保留历史基线）
 

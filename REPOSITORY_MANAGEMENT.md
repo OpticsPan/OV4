@@ -30,6 +30,7 @@
 | [REPOSITORY_MANAGEMENT.md](REPOSITORY_MANAGEMENT.md) | 仓库管理规范唯一维护位置（本文件） | 跟踪 |
 | [USER_PREFERENCES.md](USER_PREFERENCES.md) | 用户长期偏好记录（`UP-xxx` 编号管理） | 跟踪 |
 | [AGENTS.md](AGENTS.md) | AI 助手及协作者启动入口、学习与交付流程 | 跟踪 |
+| [REFERENCES.md](REFERENCES.md) | **全库参考文献清单总目**（记录全部本地原件书目、新增批次、页数、SHA-256 与引用状态） | 跟踪 |
 | [CHANGELOG.md](CHANGELOG.md) | 全局变更记录汇总（带稳定锚点，倒序排列） | 跟踪 |
 | `changes/` | 逐次变更明细日志，命名 `YYYY-MM-DD-主题_v1.md` | 跟踪 |
 | `outputs/README.md` | 正式成果按类型与主题分类索引 | 跟踪 |
@@ -39,7 +40,7 @@
 | `outputs/images/` | 正式技术插图、仿真曲线与示意图（白底高分辨率） | 跟踪 |
 | `outputs/code/` | 可复现光学/物理仿真脚本、Excel/PDF/PPTX 构建脚本 | 跟踪 |
 | `work/` | 本地临时计算、中间 JSON 缓存、浏览器打印临时文件 | 忽略（`.gitignore`） |
-| `参考文献-整理版/`、`参考文献-整理版-Markdown/` | 本机**只读原始参考文献库**（243 篇论文/专利 PDF 与 MinerU Markdown） | 忽略（`.gitignore`） |
+| `参考文献-整理版/`、`参考文献-整理版-Markdown/`、`参考文献_新增/` | 本机**只读原始参考文献库**（243 份基线 + 8 份新增一手 PDF 与 MinerU Markdown，清单见 [REFERENCES.md](REFERENCES.md)） | 忽略（`.gitignore`） |
 
 <a name="sec-homepage"></a>
 

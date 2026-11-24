@@ -2,7 +2,7 @@
 
 本仓库（本机目录 `D:\work\OV4`，对应 GitHub `OpticsPan/OV4`）用于归档 ArF 液浸光刻机套刻误差预算、子系统验收规格推导、光学/物理仿真脚本、可计算 Excel 模型、正式 PDF 报告、逐条证据链 PPTX 演示文稿及完整变更历史。
 
-**快速导航**：[成果索引](outputs/README.md) · [九大子系统说明书 v2 MD](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [九大子系统说明书 v2 PDF](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.pdf) · [演示文稿 PPTX v2](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx) · [Excel 预算表 v2](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx) · [总报告 v2 PDF](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf) · [仓库管理规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
+**快速导航**：[成果索引](outputs/README.md) · [参考文献总目](REFERENCES.md) · [九大子系统说明书 v2 MD](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [九大子系统说明书 v2 PDF](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.pdf) · [演示文稿 PPTX v2](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx) · [Excel 预算表 v2](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx) · [总报告 v2 PDF](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf) · [仓库管理规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
 
 ---
 
@@ -14,6 +14,7 @@
 
 | 日期 | 变更内容 | 正式成果与日志链接 |
 | :--- | :--- | :--- |
+| 2026-11-25 | 新增仓库级 **参考文献完整清单总目（`REFERENCES.md`）**，将受 `.gitignore` 排除的本机全部 **251 份原件**（含新增 `参考文献_新增/` 全部 8 篇一手文献 `[N1–N8]` + 原始基线库 243 份 `[003–266]`，SHA-256 去重后 250 份唯一文献，并标注 `[N4]` 与 `[010]` 指纹一致及引用状态）与 3 份跨库 `ME3` 手册完整纳入 Git 跟踪。 | [参考文献总目 REFERENCES.md](REFERENCES.md) · [新增 8 篇清单](REFERENCES.md#sec-new) · [243 份基线清单](REFERENCES.md#sec-base) · [变更日志](changes/2026-11-25-reference-catalog-inventory_v1.md) |
 | 2026-11-24 | 发布 **九大核心子系统验收指标推导与计算说明书 v2（新增 8 篇一手文献全核验版）**（完整保留 v1）：逐页核验 `参考文献_新增\` 全部 8 篇论文/专利 `[N1–N8]`，补充 ① `US20080174858A1` Table 3 `NA=1.35 / 26×5.5 mm` 原表铁证；② Heertjes *2024 IEEE ECC* 频域 `MA`/`MSD` 定理、白噪声下限 `0.050 nm` 剖析与 FAT PSD/CPS 条款；③ IBM/ASML *SPIE 8326* Table 4（`Z10 = -0.88` 吻合本文 Abbe 仿真 `0.905` 误差 2.8%）与高透热漂 `>6 nm` 实证；④ Zeiss/ASML *SPIE 11327* & *JM3 2014* 双平面操纵器正交矩阵、HD `79×17` 网格、`12→15→18→19` 参数演进与 5 机 MMO `3.0–3.8 / 2.5 nm` 对标。 | [九大子系统说明书 v2 MD](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [九大子系统说明书 v2 PDF](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.pdf) · [PDF 构建脚本 v2](outputs/code/build_9subsys_doc_pdf_v2.py) · [变更日志](changes/2026-11-24-nine-subsystems-doc-v2-new-refs-verification.md) |
 | 2026-11-24 | 新增 **九大核心子系统验收指标推导与计算说明书 v1**（覆盖 WS、RS、ENC、AA、TIS、PARIS、WS-iHOPC、Lens Zernike、Lens-iHOPC，逐指标阐明调研取整、估算与仿真计算过程），并完成 4 项深度调研核定：① 确证 NA=1.35 物镜真实狭缝尺寸为 `26×5.5 mm`；② 澄清 `1 ppm = 10 nm/cm` 并将物镜 `K3` 硬件 Range 重估为 `±15–25 ppm`；③ 结合 [100/114/251] 与第一性原理校核 Lens/WS `|K0|`；④ 附 7 篇外部高价值论文/专利手动下载清单。 | [九大子系统说明书 MD](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.md) · [九大子系统说明书 PDF](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.pdf) · [PDF 构建脚本](outputs/code/build_9subsys_doc_pdf_v1.py) · [变更日志](changes/2026-11-24-nine-subsystems-derivation-doc-and-audit_v1.md) |
 | 2026-11-24 | 发布 **v2 深度验收升级版**（完整保留 v1 全部文件）：新增 ① WS/RS 独立 6-DOF 验收必要性工程反驳论证与单程/往返重复性验收细则（含 150 m/s² 微滑移）；② WS 对 iHOPC（以 K4 为例）离线 ENC 遥测/在线曝光三级闭环审视与 8 mm 狭缝逆卷积专页图解；③ 投影物镜 K 参数补偿能力 8 维综合评价体系。同步升级 28 页 PPTX、9 表 686 公式 Excel（0 错）、30 页 PDF（45 书签）与 Markdown 报告。 | [演示文稿 PPTX v2](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx) · [Excel 预算表 v2](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx) · [正式报告 MD v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [正式报告 PDF v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf) · [v2 变更日志](changes/2026-11-24-spec-budget-v2-acceptance-deepdive_v2.md) |
@@ -44,6 +45,7 @@
 | [REPOSITORY_MANAGEMENT.md](REPOSITORY_MANAGEMENT.md) | 仓库管理规范（目录、版本、首页更新、公式排版、PDF/Excel 校验、只读保护） |
 | [USER_PREFERENCES.md](USER_PREFERENCES.md) | 用户长期偏好记录（`UP-001`–`UP-009`） |
 | [AGENTS.md](AGENTS.md) | AI 助手与协作者启动规范及交付同步清单 |
+| [REFERENCES.md](REFERENCES.md) | **全库参考文献清单总目**（Git 跟踪，含新增 8 篇 `[N1–N8]` + 基线 243 份 `[003–266]` + 3 份 ME3 配套手册与 SHA-256 指纹） |
 | [CHANGELOG.md](CHANGELOG.md) / [changes/](changes/) | 全局变更时间轴与逐次详细变更日志 |
 | [outputs/](outputs/README.md) | 正式成果分类目录（`reports/`、`tables/`、`presentations/`、`images/`、`code/`） |
 | `参考文献-整理版/`、`参考文献-整理版-Markdown/`、`参考文献_新增/` | **本机只读原始参考文献库**（243 篇 + 新增 8 篇一手论文/专利 PDF 与 Markdown，由 `.gitignore` 忽略不推送至 GitHub） |

@@ -6,6 +6,17 @@
 
 ---
 
+<a name="2026-11-25-reference-catalog"></a>
+
+## 2026-11-25　归档全库参考文献清单总目（REFERENCES.md，251 份原件含新增 8 篇）
+
+- **详细变更日志**：[2026-11-25-reference-catalog-inventory_v1.md](changes/2026-11-25-reference-catalog-inventory_v1.md)
+- **正式交付入口**：
+  - [OV4 参考文献完整清单总目 REFERENCES.md](REFERENCES.md)（[统计总览](REFERENCES.md#sec-0) · [新增 8 篇 N1–N8](REFERENCES.md#sec-new) · [243 份基线 003–266](REFERENCES.md#sec-base) · [跨库 ME3 手册](REFERENCES.md#sec-me3)）
+- **核验要点**：全量扫描并记录本机 `参考文献_新增/`（8 份）与 `参考文献-整理版/`（243 份）全部 251 份原件的编号、文件名、清理后标题、分类、页数、SHA-256 指纹与报告引用状态；经 SHA-256 去重核查确认 `[N4] 113270T (1).pdf` 与基线 `[010]` 原件哈希一致（250 份唯一文献）；全仓 Markdown 相对路径审计 0 错。
+
+---
+
 <a name="2026-11-24-nine-subsystems-doc-v2"></a>
 
 ## 2026-11-24　发布九大核心子系统验收指标推导与计算说明书 v2（新增 8 篇一手文献全核验版）
