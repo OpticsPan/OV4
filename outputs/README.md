@@ -4,14 +4,15 @@
 
 本页按成果类型与技术专题集中索引 `D:\work\OV4`（对应 GitHub `OpticsPan/OV4`）已归档的全部正式交付物。
 
-**最新更新 · 2026-11-25**　新增 DCO 预算分配图、双层误差总账与子系统验收明细。[使用说明](reports/DCO_budget_notes_v1.md) · [变更日志](../changes/2026-11-25-dco-budget-tree_v1.md)
+**最新更新 · 2026-11-25**　新增 **[WS–RS 同步策略（主从方向）与单台重复性误差专项调研报告 v1](reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md)**，自 USPTO 自动下载 13 篇 ASML/Nikon 专利原件（`[S1]–[S13]`）至本机 `参考文献_新增/WS-RS同步/` 并登记至 [REFERENCES.md](../REFERENCES.md#sec-wsrs-sync)，另附 8 篇手动下载清单。[本次变更日志](../changes/2026-11-25-ws-rs-sync-master-slave-repeatability-survey_v1.md)
 
-**此前更新 · 2026-11-25**　新增仓库强制规定 **[UP-010] GitHub 网页版阅读与公式渲染适配规范**，新增自动化门禁脚本 [audit_github_md_v1.py](code/audit_github_md_v1.py)，并完成两份 `v2` 正式 Markdown 报告的 167 处 GitHub MathJax 全量适配及 PDF 双端同步重编译核验。[本次变更日志](../changes/2026-11-25-github-web-md-math-standard_v1.md) · [参考文献清单日志](../changes/2026-11-25-reference-catalog-inventory_v1.md)
+**此前更新 · 2026-11-25**　新增 DCO 预算分配图、双层误差总账与子系统验收明细（[使用说明](reports/DCO_budget_notes_v1.md) · [变更日志](../changes/2026-11-25-dco-budget-tree_v1.md)），并发布 **[UP-010] GitHub 网页版公式规范** 与 [audit_github_md_v1.py](code/audit_github_md_v1.py)（[规范日志](../changes/2026-11-25-github-web-md-math-standard_v1.md)）。
 
 ## 按类型浏览（最新成果优先，完整保留历史基线）
 
 | 类型 | 已归档正式成果 |
 | :--- | :--- |
+| **专项技术调研报告（新增）** | **【最新调研 v1】**[ArF/ArFi WS–RS 同步策略（主从方向）与单台重复性误差专项调研报告 v1 MD](reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md)（含 13 篇 USPTO 已下载专利核验 + 8 篇手动下载清单） |
 | **DCO 预算分配与验收图** | [draw.io 源图](images/DCO_budget_v1.drawio) · [图册 PDF](images/DCO_budget_v1.pdf) · [总图 PNG](images/DCO_budget_v1.png) · [动态预算表](tables/DCO_budget_v1.xlsx) · [读图说明](reports/DCO_budget_notes_v1.md) |
 | **九大子系统推导与计算说明书（专题版）** | **【最新专题 v2】**[九大核心子系统说明书 v2 MD（8 篇一手文献全核验）](reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [印刷排版版 v2 PDF（19 页 / 35 书签）](reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.pdf)<br>【历史专题 v1】[九大核心子系统说明书 v1 MD](reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.md) · [v1 PDF（19 页 / 34 书签）](reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.pdf) |
 | **正式汇报演示文稿（PPTX 逐条证据链版）** | **【最新 v2】**[28 页逐条证据链与深度验收版 v2.pptx](presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx)（新增 6 页专题 + 3 张 260 DPI 新图）<br>【历史 v1】[22 页基线证据链版 v1.pptx](presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v1.pptx) |

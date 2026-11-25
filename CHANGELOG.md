@@ -6,6 +6,18 @@
 
 ---
 
+<a name="2026-11-25-ws-rs-sync-survey-v1"></a>
+
+## 2026-11-25　新增 WS–RS 同步策略（主从方向）与单台重复性误差专项调研报告 v1（含 13 篇 USPTO 专利入库）
+
+- **详细变更日志**：[2026-11-25-ws-rs-sync-master-slave-repeatability-survey_v1.md](changes/2026-11-25-ws-rs-sync-master-slave-repeatability-survey_v1.md)
+- **正式交付入口**：
+  - [ArF / ArFi 光刻机 WS–RS 同步控制策略与单台重复性误差专项调研报告 v1 MD](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md)（[核心结论](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md#sec-0) · [主从专利核查](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md#sec-2) · [单台重复性实测数据](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md#sec-3) · [手动下载清单](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md#sec-5-3)）
+  - [参考文献总目 REFERENCES.md（新增 S1–S13，全库 264 份原件）](REFERENCES.md#sec-wsrs-sync)
+- **核验要点**：从 USPTO 官方直下 13 篇 ASML/Nikon 专利原件（8 ASML + 5 Nikon，366 页，全部经封面视觉核验与 SHA-256 唯一性校验）落盘至 `.gitignore` 保护的 `参考文献_新增/WS-RS同步/`；其中 Nikon `US 2012/0319637 A1` 首页控制框图直接证实 `wafer error → synch target filter H(s) → reticle stage` 主从链路；全仓经 `audit_github_md_v1.py` 质检通过（`Errors: 0`）。
+
+---
+
 <a name="2026-11-25-dco-budget-tree"></a>
 
 ## 2026-11-25　DCO 双层预算分配与子系统验收图

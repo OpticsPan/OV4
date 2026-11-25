@@ -1,8 +1,8 @@
-# OV4 参考文献完整清单总目（共 251 份本地原件 · 含新增 8 篇一手文献）
+# OV4 参考文献完整清单总目（共 264 份本地原件 · 含新增 21 篇一手文献与专利）
 
-[仓库首页](README.md) · [成果索引](outputs/README.md) · [九大子系统说明书 v2](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [总报告 v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [仓库规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
+[仓库首页](README.md) · [成果索引](outputs/README.md) · [WS-RS 同步调研报告 v1](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md) · [九大子系统说明书 v2](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [总报告 v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [仓库规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
 
-> **归档说明**：受版权与大体积限制，本机原始 PDF 与 MinerU Markdown 文献库（`参考文献-整理版/`、`参考文献-整理版-Markdown/`、`参考文献_新增/`）由 [.gitignore](.gitignore) 排除、仅保留于本机只读目录；本文件作为 **Git 跟踪的全库唯一书目总目**，完整记录全部 **251 份原件**（SHA-256 去重后 **250 份唯一文献**）的编号、文件名、标题、类型、页数、校验指纹及引用状态，便于在 GitHub 网页端检索与评审溯源。
+> **归档说明**：受版权与大体积限制，本机原始 PDF 与 MinerU Markdown 文献库（`参考文献-整理版/`、`参考文献-整理版-Markdown/`、`参考文献_新增/`）由 [.gitignore](.gitignore) 排除、仅保留于本机只读目录；本文件作为 **Git 跟踪的全库唯一书目总目**，完整记录全部 **264 份原件**（SHA-256 去重后 **263 份唯一文献**）的编号、文件名、标题、类型、页数、校验指纹及引用状态，便于在 GitHub 网页端检索与评审溯源。
 
 <a name="contents"></a>
 
@@ -10,6 +10,7 @@
 
 - [0. 文献库统计总览与目录映射](#sec-0)
 - [1. 新增专项一手文献清单（参考文献_新增 · N1–N8，共 8 份）](#sec-new)
+- [1.2 新增 WS–RS 同步专项 USPTO 专利原件（参考文献_新增/WS-RS同步 · S1–S13，共 13 份）](#sec-wsrs-sync)
 - [2. 原始基线文献完整清单（参考文献-整理版 · 003–266，共 243 份）](#sec-base)
 - [3. 跨库配套引用手册（ME3 官方培训资料）与维护说明](#sec-me3)
 
@@ -23,9 +24,10 @@
 
 | 文献批次 | 本机只读目录 | 原件数 | 唯一 SHA-256 数 | 学术论文 | 专利 | 专著/硕博论文/标准 | 官方手册/规格书 | 核验/引用说明 |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| **WS–RS 同步专项专利批次（2026-11-25）** | `D:\work\OV4\参考文献_新增\WS-RS同步\` | **13** | 13（全部唯一） | 0 | 13 | 0 | 0 | **13/13 篇 USPTO 官方原件完成封面视觉核验（8 ASML + 5 Nikon，366 页），纳入 [WS-RS 同步调研报告 v1](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md)** |
 | **新增专项批次（2026-11-24）** | `D:\work\OV4\参考文献_新增\` | **8** | 7（`[N4]` 同 `[010]`） | 7 | 1 | 0 | 0 | **8/8 全部完成全文核验并纳入说明书 v2** |
-| **原始基线库（OV4）** | `D:\work\OV4\参考文献-整理版\` | **243** | 243 | 168 | 62 | 5 | 8 | 同名 MinerU Markdown 存放于 `参考文献-整理版-Markdown\`；已在正式报告中直接引用 39 份核心条目 |
-| **合计** | — | **251** | **250** | **175** | **63** | **5** | **8** | 全库均保留原件 SHA-256 指纹供复查 |
+| **原始基线库（OV4）** | `D:\work\OV4\参考文献-整理版\` | **243** | 243 | 168 | 62 | 5 | 8 | 同名 MinerU Markdown 存放于 `参考文献-整理版-Markdown\`；已在正式报告中直接引用 40+ 份核心条目 |
+| **合计** | — | **264** | **263** | **175** | **76** | **5** | **8** | 全库均保留原件 SHA-256 指纹供复查；另 8 篇待手动下载清单见 [调研报告第 5.3 节](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md#sec-5-3) |
 
 ---
 
@@ -45,6 +47,32 @@
 | **`[N6]`** | `832607.pdf` | 学术论文 | 19 | `bd500ea50782` | S. Halle, M. Crouse, A. Jiang, Y. van Dommelen, T. Brunner 等 (IBM / ASML / BRION), *Lens Heating Challenges for Negative Tone Develop Layers with Freeform Illumination*, Proc. SPIE 8326, 832607 (2012), DOI: 10.1117/12.916312 | 78% 高透 NTD 掩模未控奇像差套刻 `> 6 nm`（FlexWave 压至 `< 2 nm`）；Table 4 `Z10 = -0.88 nm/nm` 交叉验证 Abbe 仿真 `0.905`（误差 2.8%） | 全新入库（已核验） |
 | **`[N7]`** | `011006_1.pdf` | 学术论文 | 11 | `06f8732be40c` | J. Mulkens, P. Hinnen, M. Kubis, A. Padiy, J. Benschop (ASML), *Holistic optimization architecture enabling sub-14-nm projection lithography*, JM3 13(1), 011006 (2014), DOI: 10.1117/1.JMM.13.1.011006 | 20 参逐场 Eq. 3；Gridplate `< 15 mm` vs 多移位 `> 15 mm`（5 机 MMO `3.0–3.8 nm`、HO-CPE `2.5 nm`）；18 参 RHC 极热压至 `1.58 nm` | 全新入库（已核验） |
 | **`[N8]`** | `Frequency-Domain_Properties_of_Moving_Average_and_Moving_Standard_Deviation_with_Application_to_Stage_Motion_Control.pdf` | 学术论文 | 6 | `d79e3e797370` | M. Heertjes (TU/e / ASML), *Frequency-domain properties of moving average and moving standard deviation with application to stage (motion) control*, 2024 IEEE ECC, pp. 3521–3526, DOI: 10.23919/ECC64448.2024.10591183 | Theorem 2.1 / Eq. 8–9 / Prop. 3.1 严格给出曝光狭缝 `MA`/`MSD` 互补功率谱公式与 CPS 验证（工业台 `τ_slit = 9.2 ms`） | 全新入库（已核验） |
+
+---
+
+<a name="sec-wsrs-sync"></a>
+
+## 1.2 新增 WS–RS 同步专项 USPTO 专利原件清单（`参考文献_新增/WS-RS同步/` · `[S1]–[S13]`，共 13 份）
+
+[返回目录](#contents)
+
+> 说明：本批次 13 份专利全部自 USPTO 官方 PDF 接口合法直下并完成首页视觉核验与 SHA-256 去重校验（均与基线库 100% 唯一，合计 366 页），直接支撑 [WS-RS 同步策略与单台重复性误差专项调研报告 v1](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md)。另 8 篇待手动下载论文与非 US 专利清单（`[M1]–[M8]`）见该报告 [第 5.3 节](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md#sec-5-3)。
+
+| 编号 | 本地 PDF 文件名（`参考文献_新增/WS-RS同步/`） | 权利人 | 专利号 | 页数 | SHA-256（前 12 位） | 核验后发明人、标题与核心支撑点 | 入库状态 |
+| :---: | :--- | :---: | :--- | :---: | :---: | :--- | :--- |
+| **`[S1]`** | `ASML_US20040176861A1_Butler_WS_MassEstFeedforward.pdf` | ASML | `US 2004/0176861 A1` | 39 | `35bb9a8190d0` | H. Butler, *System for Controlling a Position of a Mass*（2004）；WS 在线质量辨识与自适应加速度前馈（对应 `[088]`） | 全新入库（已核验） |
+| **`[S2]`** | `ASML_US20060285101A1_Butler_Breukers_PS_Feedforward.pdf` | ASML | `US 2006/0285101 A1` | 14 | `de5eed816fde` | H. Butler, E. H. J. Draaijer, M. J. E. G. Breukers, *Lithographic Apparatus, Projection Apparatus...*（2006）；投影系统位置滤波前馈至晶圆台 | 全新入库（已核验） |
+| **`[S3]`** | `ASML_US7098990B2_Butler_StageAccelControl.pdf` | ASML | `US 7,098,990 B2` | 14 | `0ffcf355053b` | H. Butler, *Lithographic Apparatus, Device Manufacturing Method...*（2006）；双支路加速度反馈外扰抑制 | 全新入库（已核验） |
+| **`[S4]`** | `ASML_US7170581B2_SelfAdaptingFeedforwardTuning.pdf` | ASML | `US 7,170,581 B2` | 14 | `4ad7c9f4d350` | R. Tousain, *Self-Adapting Feedforward Control Tuning for Motion System*（2007）；速度/加速度/Jerk/Snap 前馈在线自适应学习 | 全新入库（已核验） |
+| **`[S5]`** | `ASML_US7181296B2_AdaptiveILC_LithoStage.pdf` | ASML | `US 7,181,296 B2` | 24 | `0093a2f391c4` | A. I. Rotariu, R. Ellenbroek, M. Steinbuch, G. E. Van Baars, *Method of Adaptive Interactive Learning Control...*（2007）；变扫长时频自适应 ILC | 全新入库（已核验） |
+| **`[S6]`** | `ASML_US7239368B2_UnflatnessFeedforwardOverlay.pdf` | ASML | `US 7,239,368 B2` | 13 | `98d0744e4140` | R. Oesterholt 等, *Using Unflatness Information of the Substrate Table or Mask Table for Decreasing Overlay*（2007）；面形不平度前馈 | 全新入库（已核验） |
+| **`[S7]`** | `ASML_US7405811B2_LithoPositioningApparatus.pdf` | ASML | `US 7,405,811 B2` | 16 | `3079eb332226` | M. H. M. Beems, J. Sakai, *Lithographic Apparatus and Positioning Apparatus*（2008）；中间结构短程双测量系统（已核验确属 ASML） | 全新入库（已核验） |
+| **`[S8]`** | `ASML_US8279401B2_PositionControlComplianceFF.pdf` | ASML | `US 8,279,401 B2` | 13 | `cba17490471b` | M. J. Vervoordeldonk, M. C. J. Baggen, *Position Control System...*（2012）；结构柔度补偿 + 加速度/Snap 前馈（`[147]` 引用） | 全新入库（已核验） |
+| **`[S9]`** | `Nikon_US20040128918A1_ILC_StageSyncTracking.pdf` | Nikon | `US 2004/0128918 A1` | 41 | `1892fe42639e` | P.-H. Yang, B. Yuan, S. Makinouchi, K. Hirano 等, *Control System and Method for Improving Tracking Accuracy...*（2004）；两台同步耦合 + ILC 奠基专利 | 全新入库（已核验） |
+| **`[S10]`** | `Nikon_US20050231706A1_FeedforwardMILC_Grouping.pdf` | Nikon | `US 2005/0231706 A1` | 25 | `5ffba327a38a` | P.-H. Yang, H. Hashimoto, B. Yuan, A. Yamaguchi, S. Makinouchi, *Feedforward Control with Reduced Learning Time...*（2005）；分组 MILC 前馈 | 全新入库（已核验） |
+| **`[S11]`** | `Nikon_US20060170382A1_LinearMotorForceRippleILC.pdf` | Nikon | `US 2006/0170382 A1` | 34 | `89c5de51cb9f` | P.-H. Yang, H. Hashimoto, B. Yuan, A. Yamaguchi, *Linear Motor Force Ripple Identification and Compensation with ILC*（2006，`[085]` 引用） | 全新入库（已核验） |
+| **`[S12]`** | `Nikon_US20120319637A1_SyncControlDevicesMethods.pdf` | Nikon | `US 2012/0319637 A1` | 72 | `8439247074ae` | **P.-H. Yang, K. Hirano, M. Yuasa**, *Synchronization Control Devices and Methods*（2012，`[085]` 引用）；首页框图实锤 `wafer error → H(s) → RS` 主从链路 | 全新入库（已核验） |
+| **`[S13]`** | `Nikon_US8451431B2_IFT_SyncControlStages.pdf` | Nikon | `US 8,451,431 B2` | 47 | `a629cbaeabc2` | P.-H. Yang, S.-L. Koo, *Control Systems and Methods Applying IFT for Feed-Forward and Synchronization Control...*（2013，`[147]` 引用） | 全新入库（已核验） |
 
 ---
 
