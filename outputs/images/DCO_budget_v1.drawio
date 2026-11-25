@@ -1,0 +1,748 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
+  <diagram id="dco-overview" name="01 总图｜DCO 预算传递">
+    <mxGraphModel dx="1600" dy="1150" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1180" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" vertex="1" value="同机同台双层曝光的 DCO 预算" style="rounded=0;arcSize=12;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=1.4;fontColor=#103947;fontFamily=Noto Sans CJK SC;fontSize=38;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="32" y="16" width="1540" height="62" />
+        </mxCell>
+        <mxCell id="sub" parent="1" vertex="1" value="NXT:1950i–1970Ci 对标设计    /    晶圆侧 · 分轴验收    /    数值均为预算目标或模型复算，单位 nm，X 在前、Y 在后。" style="rounded=0;arcSize=12;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=1.4;fontColor=#466670;fontFamily=Noto Sans CJK SC;fontSize=19;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="32" y="78" width="1536" height="40" />
+        </mxCell>
+        <mxCell id="h1" parent="1" vertex="1" value="整机指标" style="rounded=0;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E6EFF0;strokeColor=none;strokeWidth=1.4;fontColor=#174653;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="36" y="137" width="230" height="44" />
+        </mxCell>
+        <mxCell id="h2" parent="1" vertex="1" value="统计量" style="rounded=0;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E6EFF0;strokeColor=none;strokeWidth=1.4;fontColor=#174653;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="296" y="137" width="215" height="44" />
+        </mxCell>
+        <mxCell id="h3" parent="1" vertex="1" value="功能分组 · 双层 RSS" style="rounded=0;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E6EFF0;strokeColor=none;strokeWidth=1.4;fontColor=#174653;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="559" y="137" width="225" height="44" />
+        </mxCell>
+        <mxCell id="h4" parent="1" vertex="1" value="误差项 · 双层 3σ  X / Y" style="rounded=0;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E6EFF0;strokeColor=none;strokeWidth=1.4;fontColor=#174653;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="137" width="335" height="44" />
+        </mxCell>
+        <mxCell id="h5" parent="1" vertex="1" value="子系统验收入口 · 详见后页" style="rounded=0;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E6EFF0;strokeColor=none;strokeWidth=1.4;fontColor=#174653;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="137" width="357" height="44" />
+        </mxCell>
+        <mxCell id="root" parent="1" vertex="1" value="DCO ≤ 2.000 nm&#10;&#10;X  1.833 nm&#10;Y  1.869 nm" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#103C49;strokeColor=none;strokeWidth=1.4;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=22;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="36" y="441" width="230" height="149" />
+        </mxCell>
+        <mxCell id="bias" parent="1" vertex="1" value="剩余均值  |μ|&#10;各轴 ≤ 0.300 nm&#10;按绝对值线性相加" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFF3DE;strokeColor=#D7AE68;strokeWidth=1.4;fontColor=#754C19;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="296" y="218" width="215" height="104" />
+        </mxCell>
+        <mxCell id="rand" parent="1" vertex="1" value="两层随机差  3σ&#10;上限  1.700 nm&#10;X  1.533 nm&#10;Y  1.569 nm" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#DCF0EC;strokeColor=#78ABA3;strokeWidth=1.4;fontColor=#125D56;fontFamily=Noto Sans CJK SC;fontSize=19;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="296" y="515" width="215" height="115" />
+        </mxCell>
+        <mxCell id="e-root-bias" parent="1" edge="1" source="root" target="bias" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="281" y="515.5" />
+              <mxPoint x="281" y="270.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-root-rand" parent="1" edge="1" source="root" target="rand" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="281" y="515.5" />
+              <mxPoint x="281" y="572.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g0" parent="1" vertex="1" value="同步运动&#10;0.569  /  0.694" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EAF4F2;strokeColor=#94B8B1;strokeWidth=1.4;fontColor=#174F49;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="559" y="202.0" width="225" height="60" />
+        </mxCell>
+        <mxCell id="e-rand-g0" parent="1" edge="1" source="rand" target="g0" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="535" y="572.5" />
+              <mxPoint x="535" y="232.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D1" parent="1" vertex="1" value="D1   WS–RS 同步 MA&#10;0.569  /  0.694     层间系数 √2" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="202" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g0-D1" parent="1" edge="1" source="g0" target="D1" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="232.0" />
+              <mxPoint x="805" y="232.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD1" parent="1" vertex="1" value="WS、RS、ENC、机架 → 曝光窗同步 MA" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="202" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D1-vD1" parent="1" edge="1" source="D1" target="vD1" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="232.0" />
+              <mxPoint x="1189" y="232.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g1" parent="1" vertex="1" value="测量与曝光对准&#10;0.831  /  0.831" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EAF4F2;strokeColor=#94B8B1;strokeWidth=1.4;fontColor=#174F49;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="559" y="311.5" width="225" height="60" />
+        </mxCell>
+        <mxCell id="e-rand-g1" parent="1" edge="1" source="rand" target="g1" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="535" y="572.5" />
+              <mxPoint x="535" y="341.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2" parent="1" vertex="1" value="D2   晶圆网格与基线&#10;0.608  /  0.608     层间系数 √2" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="275" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g1-D2" parent="1" edge="1" source="g1" target="D2" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="341.5" />
+              <mxPoint x="805" y="305.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD2" parent="1" vertex="1" value="AA 网格 ≤0.35；M→E 漂移 ≤0.25" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="275" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D2-vD2" parent="1" edge="1" source="D2" target="vD2" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="305.0" />
+              <mxPoint x="1189" y="305.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3" parent="1" vertex="1" value="D3   掩模空间像对准&#10;0.566  /  0.566     层间系数 √2" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="348" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g1-D3" parent="1" edge="1" source="g1" target="D3" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="341.5" />
+              <mxPoint x="805" y="378.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD3" parent="1" vertex="1" value="PARIS 七点 RA ≤0.40；TIS 标定" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="348" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D3-vD3" parent="1" edge="1" source="D3" target="vD3" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="378.0" />
+              <mxPoint x="1189" y="378.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g2" parent="1" vertex="1" value="晶圆与掩模热效应&#10;0.772  /  0.772" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EAF4F2;strokeColor=#94B8B1;strokeWidth=1.4;fontColor=#174F49;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="559" y="457.5" width="225" height="60" />
+        </mxCell>
+        <mxCell id="e-rand-g2" parent="1" edge="1" source="rand" target="g2" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="535" y="572.5" />
+              <mxPoint x="535" y="487.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D4" parent="1" vertex="1" value="D4   晶圆热与液浸&#10;0.570  /  0.570     层间系数 √2" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="421" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g2-D4" parent="1" edge="1" source="g2" target="D4" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="487.5" />
+              <mxPoint x="805" y="451.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD4" parent="1" vertex="1" value="WT/液浸 ≤0.35；WH 瞬态 ≤0.20" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="421" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D4-vD4" parent="1" edge="1" source="D4" target="vD4" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="451.0" />
+              <mxPoint x="1189" y="451.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D5" parent="1" vertex="1" value="D5   掩模热与气隙&#10;0.520  /  0.520     层间系数 √2" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="494" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g2-D5" parent="1" edge="1" source="g2" target="D5" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="487.5" />
+              <mxPoint x="805" y="524.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD5" parent="1" vertex="1" value="气隙 ≤0.25；RHC 后热残差 ≤0.27" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="494" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D5-vD5" parent="1" edge="1" source="D5" target="vD5" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="524.0" />
+              <mxPoint x="1189" y="524.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g3" parent="1" vertex="1" value="掩模与晶圆夹持&#10;0.510  /  0.510" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EAF4F2;strokeColor=#94B8B1;strokeWidth=1.4;fontColor=#174F49;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="559" y="603.5" width="225" height="60" />
+        </mxCell>
+        <mxCell id="e-rand-g3" parent="1" edge="1" source="rand" target="g3" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="535" y="572.5" />
+              <mxPoint x="535" y="633.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6" parent="1" vertex="1" value="D6   掩模重夹与微滑移&#10;0.300  /  0.300     层间系数 √2" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="567" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g3-D6" parent="1" edge="1" source="g3" target="D6" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="633.5" />
+              <mxPoint x="805" y="597.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD6" parent="1" vertex="1" value="掩模面重复装夹、微滑移各 ≤0.60" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="567" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D6-vD6" parent="1" edge="1" source="D6" target="vD6" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="597.0" />
+              <mxPoint x="1189" y="597.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D7" parent="1" vertex="1" value="D7   晶圆重夹与微滑移&#10;0.412  /  0.412     层间系数 √2" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="640" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g3-D7" parent="1" edge="1" source="g3" target="D7" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="633.5" />
+              <mxPoint x="805" y="670.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD7" parent="1" vertex="1" value="重复吸片 ≤0.25；微滑移 ≤0.15" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="640" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D7-vD7" parent="1" edge="1" source="D7" target="vD7" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="670.0" />
+              <mxPoint x="1189" y="670.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g4" parent="1" vertex="1" value="场内相对图形位置&#10;0.597  /  0.556" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EAF4F2;strokeColor=#94B8B1;strokeWidth=1.4;fontColor=#174F49;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="559" y="786.0" width="225" height="60" />
+        </mxCell>
+        <mxCell id="e-rand-g4" parent="1" edge="1" source="rand" target="g4" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="535" y="572.5" />
+              <mxPoint x="535" y="816.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D8" parent="1" vertex="1" value="D8   物镜 iHOPC 残差&#10;0.380  /  0.221     层间系数 1.20" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="713" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g4-D8" parent="1" edge="1" source="g4" target="D8" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="816.0" />
+              <mxPoint x="805" y="743.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD8" parent="1" vertex="1" value="8 个 K 系数 → 场角位移，按轴 RSS" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="713" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D8-vD8" parent="1" edge="1" source="D8" target="vD8" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="743.0" />
+              <mxPoint x="1189" y="743.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D9" parent="1" vertex="1" value="D9   WS iHOPC 残差&#10;0.274  /  0.352     层间系数 1.20" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="786" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g4-D9" parent="1" edge="1" source="g4" target="D9" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="816.0" />
+              <mxPoint x="805" y="816.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD9" parent="1" vertex="1" value="11 个 K 系数 → 场角位移，按轴 RSS" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="786" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D9-vD9" parent="1" edge="1" source="D9" target="vD9" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="816.0" />
+              <mxPoint x="1189" y="816.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D10" parent="1" vertex="1" value="D10   奇像差跨照明像移&#10;0.370  /  0.370     层间系数 1.00" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="859" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g4-D10" parent="1" edge="1" source="g4" target="D10" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="816.0" />
+              <mxPoint x="805" y="889.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD10" parent="1" vertex="1" value="30 项奇 Z 残差 × 跨照明灵敏度差" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="859" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D10-vD10" parent="1" edge="1" source="D10" target="vD10" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="889.0" />
+              <mxPoint x="1189" y="889.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g5" parent="1" vertex="1" value="量测与未建模项&#10;0.354  /  0.354" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EAF4F2;strokeColor=#94B8B1;strokeWidth=1.4;fontColor=#174F49;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="559" y="932.0" width="225" height="60" />
+        </mxCell>
+        <mxCell id="e-rand-g5" parent="1" edge="1" source="rand" target="g5" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="535" y="572.5" />
+              <mxPoint x="535" y="962.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D11" parent="1" vertex="1" value="D11   量测本底与未建模残差&#10;0.354  /  0.354     层间系数 √2" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F9FA;strokeColor=#ACBEC3;strokeWidth=1.4;fontColor=#173848;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="829" y="932" width="335" height="60" />
+        </mxCell>
+        <mxCell id="e-g5-D11" parent="1" edge="1" source="g5" target="D11" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="805" y="962.0" />
+              <mxPoint x="805" y="962.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vD11" parent="1" vertex="1" value="单层等效合并额度 ≤0.25；整机 SAT" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#D5DEDF;strokeWidth=1.4;fontColor=#344D56;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="1212" y="932" width="357" height="60" />
+        </mxCell>
+        <mxCell id="e-D11-vD11" parent="1" edge="1" source="D11" target="vD11" style="edgeStyle=none;rounded=0;html=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=0;entryY=0.5;entryPerimeter=1;endArrow=block;endFill=1;endSize=5;strokeWidth=1.6;strokeColor=#8CA3A8;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1189" y="962.0" />
+              <mxPoint x="1189" y="962.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note1" parent="1" vertex="1" value="最紧预算在 Y 轴&#10;2.000 − 1.869 = 0.131 nm（6.55%）&#10;此数为系统余量；D11 已计入随机项。" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFF5E4;strokeColor=#DBBD80;strokeWidth=1.4;fontColor=#6D4B26;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="36" y="812" width="474" height="108" />
+        </mxCell>
+        <mxCell id="foot" parent="1" vertex="1" value="读图方向   从左向右分配规格，从右向左复算。先将物理量投影到晶圆像面，再作层间差分；各独立项按轴 RSS，最后加 |μ|。" style="rounded=0;arcSize=12;whiteSpace=wrap;html=0;fillColor=#DEECEB;strokeColor=none;strokeWidth=1.4;fontColor=#164F50;fontFamily=Noto Sans CJK SC;fontSize=18;fontStyle=1;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="36" y="1028" width="1533" height="55" />
+        </mxCell>
+        <mxCell id="source" parent="1" vertex="1" value="依据   Freriks 等（2006），Fig. 3；OV4 九大说明书 v2 §0–9；整机报告 v2 §0.3、§7–12；工作簿 v2 表 01、04、05。&#10;版本核对   X 轴：旧表 8 mm 为 1.834 nm；按 5.5 mm 重算为 1.833 nm；九大说明书摘要列 1.832 nm。Y 轴均为 1.869 nm。" style="rounded=0;arcSize=12;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=1.4;fontColor=#536B73;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="36" y="1090" width="1530" height="72" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="motion" name="D1 · 运动与计量">
+    <mxGraphModel grid="0" guides="1" tooltips="1" connect="1" page="1" pageScale="1" pageWidth="1418" pageHeight="1009" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="motion-v1" parent="1" vertex="1" value="D1 · 运动与计量" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;strokeColor=none;fillColor=none;fontColor=#143344;fontFamily=Noto Sans CJK SC;fontSize=29;fontStyle=1;arcSize=4;">
+          <mxGeometry x="32" y="22" width="1353" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v2" parent="1" vertex="1" value="同机同台、曝光窗 MA、晶圆平面。左侧是预算，中列是误差传递，右侧是可单测的硬件指标。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;strokeColor=none;fillColor=none;fontColor=#446170;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="80" width="1353" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v3" parent="1" vertex="1" value="预算 / 单层等效量" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="32" y="136" width="351" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v4" parent="1" vertex="1" value="传递 / 折算" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="431" y="136" width="363" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v5" parent="1" vertex="1" value="子系统验收 / 条件" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="842" y="136" width="543" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v6" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D1 · 非扫描方向 X&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;平移 ≤ 0.400 nm&lt;br/&gt;偏航造成边缘位移 0.04125 nm&lt;br/&gt;单层 RSS 0.4021 nm → 两层 0.5687 nm" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="191" width="351" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v7" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;晶圆面相对位移&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;eₓ = MA(xWS − xRS/4)&lt;br/&gt;RSS(0.32, 0.96/4) = 0.400 nm&lt;br/&gt;偏航：2.75 mm × 15 nrad = 0.04125 nm" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="191" width="363" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v8" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;WS、RS 动态往返定位&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;WS-X ≤ 0.32 nm；RS-X ≤ 0.96 nm（掩模侧）。&lt;br/&gt;5.5 mm 狭缝、晶圆扫描 0.70 m/s，MA 窗约 7.86 ms。&lt;br/&gt;两台独立测量后，以同步遥测核验实际差分与协方差。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="191" width="543" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-e9" parent="1" edge="1" source="motion-v6" target="motion-v7" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-e10" parent="1" edge="1" source="motion-v7" target="motion-v8" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v11" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D1 · 扫描方向 Y&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;平移 ≤ 0.450 nm&lt;br/&gt;偏航造成边缘位移 0.195 nm&lt;br/&gt;单层 RSS 0.4904 nm → 两层 0.6936 nm" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="366" width="351" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v12" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;平移差与角位移&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;eᵧ = MA(yWS − yRS/4)&lt;br/&gt;RSS(0.36, 1.08/4) = 0.450 nm&lt;br/&gt;偏航：13 mm × 15 nrad = 0.195 nm" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="366" width="363" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v13" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;WS、RS 平移与偏航&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;WS-Y ≤ 0.36 nm；RS-Y ≤ 1.08 nm（掩模侧）。&lt;br/&gt;WS-Rz ≤ 12 nrad；RS-Rz ≤ 9 nrad；RSS = 15 nrad。&lt;br/&gt;RS-Rz 为 1∶1 角度传递。正反扫与 150 m/s² 掩模折返单验。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="366" width="543" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-e14" parent="1" edge="1" source="motion-v11" target="motion-v12" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-e15" parent="1" edge="1" source="motion-v12" target="motion-v13" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v16" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D1 · 闭环内的计量要求&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;ENC 是台体定位反馈。&lt;br/&gt;框架相对物镜位置影响像面。&lt;br/&gt;两者均在同步运动项内落实。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="541" width="351" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v17" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;曝光窗计量 / 频域核验&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;按实际曝光权重对 PSD 积分求 MA。&lt;br/&gt;平移读数 X/Y 用 1∶4 缩小换算。&lt;br/&gt;曝光窗底噪、换头跳变、长期标尺漂移分别测量。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="541" width="363" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v18" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;编码器 ENC 与计量框架 MF&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;WS-ENC X/Y ≤ 0.12/0.12 nm；Rz ≤ 1.5 nrad。&lt;br/&gt;RS-ENC X/Y ≤ 0.32/0.36 nm（掩模侧）；Rz ≤ 2.5 nrad。&lt;br/&gt;WS 换头 ≤ 0.15 nm，网格板 7 天稳定性 ≤ 0.18 nm。&lt;br/&gt;MF–物镜动态 X/Y 各 ≤ 0.15 nm，满速扫描、曝光窗 MA。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="541" width="543" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-e19" parent="1" edge="1" source="motion-v16" target="motion-v17" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-e20" parent="1" edge="1" source="motion-v17" target="motion-v18" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v21" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;验收边界 · 焦面与模糊&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;D1 的横向预算取 X、Y、Rz。&lt;br/&gt;Z、Rx、Ry 同步另验 FU。&lt;br/&gt;MSD 表征窗内运动模糊。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="731" width="351" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v22" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;其余自由度的折算&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RS → 晶圆侧：Z 用 n水/16，&lt;br/&gt;Rx、Ry 用 n水/4。&lt;br/&gt;Sync Z ≤ 5.0 nm；Rx/Ry ≤ 0.25/0.12 μrad。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="731" width="363" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v23" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;运动系统联调记录&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;WS Z/Rx/Ry ≤ 4.50 nm / 0.20 / 0.10 μrad；&lt;br/&gt;RS Z/Rx/Ry ≤ 24 nm / 0.42 / 0.19 μrad（掩模侧）。&lt;br/&gt;Sync MSD-XY/Z ≤ 1.80/10.0 nm（窗内 1σ）。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="731" width="543" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-e24" parent="1" edge="1" source="motion-v21" target="motion-v22" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-e25" parent="1" edge="1" source="motion-v22" target="motion-v23" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="motion-v26" parent="1" vertex="1" value="来源　《九大核心子系统说明书 v2》§1、§2.2、§2.4、§3.2；《整机及子系统报告 v2》§12。单层和两层按报告的独立性假设作 RSS，X 向按 5.5 mm 狭缝重算。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=15;spacingRight=15;spacingTop=0;spacingBottom=0;strokeColor=#E2C69E;fillColor=#FFF5E7;fontColor=#94511B;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="911" width="1353" height="74" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="process" name="D2–D7 · 对准、热与夹持">
+    <mxGraphModel grid="0" guides="1" tooltips="1" connect="1" page="1" pageScale="1" pageWidth="1418" pageHeight="1290" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="process-v1" parent="1" vertex="1" value="D2–D7 · 对准、热与夹持" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;strokeColor=none;fillColor=none;fontColor=#143344;fontFamily=Noto Sans CJK SC;fontSize=29;fontStyle=1;arcSize=4;">
+          <mxGeometry x="32" y="22" width="1353" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v2" parent="1" vertex="1" value="本页节点值以晶圆面 nm 表示，X、Y 两轴各自使用相同限值。每个 D 项按独立双层 ×√2 回传。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;strokeColor=none;fillColor=none;fontColor=#446170;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="80" width="1353" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v3" parent="1" vertex="1" value="预算 / 单层 → 双层" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="32" y="136" width="351" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v4" parent="1" vertex="1" value="传递 / 折算" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="431" y="136" width="363" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v5" parent="1" vertex="1" value="子系统验收 / 条件" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="842" y="136" width="543" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v6" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D2 · 测量侧晶圆对准&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;0.430 → 0.608 nm / 轴" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="191" width="351" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v7" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;全片网格与基线&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RSS(0.35, 0.25) = 0.430 nm。&lt;br/&gt;MF 短期漂移内嵌基线。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="191" width="363" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v8" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;AA / M-to-E 基线&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;标准片单标记静态 ≤ 0.20 nm、动态 ≤ 0.35 nm。&lt;br/&gt;≥20 标记拟合，全片网格重复性 ≤ 0.35 nm；&lt;br/&gt;片内/批间短期基线漂移 ≤ 0.25 nm，含 MF ≤ 0.15 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="191" width="543" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e9" parent="1" edge="1" source="process-v6" target="process-v7" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e10" parent="1" edge="1" source="process-v7" target="process-v8" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v11" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D3 · 曝光侧掩模对准&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;0.400 → 0.566 nm / 轴" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="374" width="351" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v12" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;空间像配准&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;PARIS 7 视场点 RA 直接进入 D3。&lt;br/&gt;TIS 的水平基准用于校准，避免与 RA 重计。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="374" width="363" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v13" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;TIS / PARIS&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;TIS 水平 XY 重复性 ≤ 0.35 nm；PARIS 7 点 RA 的 X/Y 各 ≤ 0.40 nm（3σ）。&lt;br/&gt;TIS 焦面 2.50 nm 对应 FU；双台基准板差 0.25 nm 对应 MMO。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="374" width="543" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e14" parent="1" edge="1" source="process-v11" target="process-v12" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e15" parent="1" edge="1" source="process-v12" target="process-v13" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v16" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D4 · 晶圆温控与液浸&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;0.403 → 0.570 nm / 轴" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="545" width="351" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v17" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;曝光热残差与出口瞬态&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RSS(0.35, 0.20) = 0.403 nm。&lt;br/&gt;WH 供片后温差衰减至约 0.4–0.5 mK。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="545" width="363" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v18" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;WT（晶圆台）/ WH（供片）&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;30 mJ/cm²、230 wph 下，WT 含液浸/WHC 的非均匀温差 ≤ 4 mK，套刻残差 ≤ 0.35 nm。&lt;br/&gt;WH 出口片间温差重复性 ≤ 5 mK，M-to-E 套刻 ≤ 0.20 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="545" width="543" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e19" parent="1" edge="1" source="process-v16" target="process-v17" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e20" parent="1" edge="1" source="process-v17" target="process-v18" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v21" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D5 · 掩模热与气隙&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;0.368 → 0.520 nm / 轴" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="715" width="351" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v22" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;气隙抖动与热膨胀&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RSS(0.25, 0.27) = 0.368 nm。&lt;br/&gt;RHC 后不可校热畸变为本项热残差。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="715" width="363" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v23" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;掩模温控 / 气幕&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;气隙温度梯度波动 ≤ 10 mK；点间套刻噪声 ≤ 0.25 nm。&lt;br/&gt;RHC 后非均匀温升 ≤ 30 mK，按约 0.0091 nm/mK 折至 0.27 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="715" width="543" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e24" parent="1" edge="1" source="process-v21" target="process-v22" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e25" parent="1" edge="1" source="process-v22" target="process-v23" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v26" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D6 · 掩模夹持&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;0.212 → 0.300 nm / 轴" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="885" width="351" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v27" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;独立卸夹与滑移残差&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RSS(0.15, 0.15) = 0.212 nm。&lt;br/&gt;掩模平移形变 4∶1 折至晶圆平面。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="885" width="363" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v28" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;RT 掩模台&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;掩模侧重夹 ≤ 0.60 nm；150 m/s² 正反扫微滑移 ≤ 0.60 nm。晶圆侧各 ≤ 0.15 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="885" width="543" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e29" parent="1" edge="1" source="process-v26" target="process-v27" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e30" parent="1" edge="1" source="process-v27" target="process-v28" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v31" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D7 · 晶圆夹持&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;0.292 → 0.412 nm / 轴" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="1038" width="351" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v32" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;重复吸片与扫描微滑移&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RSS(0.25, 0.15) = 0.292 nm。&lt;br/&gt;去除可校正线性项，保留随机残差。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="1038" width="363" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v33" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;WT 晶圆台&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;同一参考片重复吸附后的不可校变形 ≤ 0.25 nm。&lt;br/&gt;35–40 m/s² 折返正反扫微滑移 ≤ 0.15 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="1038" width="543" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e34" parent="1" edge="1" source="process-v31" target="process-v32" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-e35" parent="1" edge="1" source="process-v32" target="process-v33" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="process-v36" parent="1" vertex="1" value="来源　《九大核心子系统说明书 v2》§4–6；《整机及子系统报告 v2》§5–12。上述为设计预算 / 验收目标，实际双层贡献须由重装、正反扫、热工况及对准重复性记录验证。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=15;spacingRight=15;spacingTop=0;spacingBottom=0;strokeColor=#E2C69E;fillColor=#FFF5E7;fontColor=#94511B;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="1192" width="1353" height="74" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="field" name="D8–D9 · 场内补偿">
+    <mxGraphModel grid="0" guides="1" tooltips="1" connect="1" page="1" pageScale="1" pageWidth="1418" pageHeight="1098" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="field-v1" parent="1" vertex="1" value="D8–D9 · 场内补偿" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;strokeColor=none;fillColor=none;fontColor=#143344;fontFamily=Noto Sans CJK SC;fontSize=29;fontStyle=1;arcSize=4;">
+          <mxGeometry x="32" y="22" width="1353" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v2" parent="1" vertex="1" value="按执行器归属分配 K 系数残差。x、y 用 cm，场角 |x|=1.30、|y|=1.65。下列 ΔK 为允许绝对残差，角点套刻的单位为 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;strokeColor=none;fillColor=none;fontColor=#446170;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="80" width="1353" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v3" parent="1" vertex="1" value="预算 / 两层目标贡献" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="32" y="136" width="351" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v4" parent="1" vertex="1" value="传递 / 可复算示例" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="431" y="136" width="363" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v5" parent="1" vertex="1" value="子系统验收 / 全系数限值" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="842" y="136" width="543" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v6" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D8 · 物镜 iHOPC / X&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;6 项；单层场角 RSS 0.317 nm。&lt;br/&gt;报告采用双层 ×1.20 → 0.380 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="191" width="351" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v7" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;K3 线性放大率&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;δₓ = |ΔK₃| × 1.30&lt;br/&gt;0.100 nm/cm × 1.30 cm = 0.130 nm。&lt;br/&gt;Gₘ = |x|ᵖ|y|ᑫ；各项场角贡献按轴 RSS。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="191" width="363" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v8" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;物镜 X 向 6 项&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;一次（nm/cm）：K3 0.100。&lt;br/&gt;二次（nm/cm²）：K7 0.080，K9 0.060。&lt;br/&gt;三次（nm/cm³）：K13 0.060，K15 0.045，K17 0.035。&lt;br/&gt;K3 步长 ≤ 0.010 nm/cm，单向 / 滞回 ≤ 0.035 / 0.025 nm/cm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="191" width="543" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="field-e9" parent="1" edge="1" source="field-v6" target="field-v7" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="field-e10" parent="1" edge="1" source="field-v7" target="field-v8" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v11" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D8 · 物镜 iHOPC / Y&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;2 项；单层场角 RSS 0.184 nm。&lt;br/&gt;双层 ×1.20 → 0.221 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="405" width="351" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v12" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;K12、K18&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RSS(0.080 × 1.30²,&lt;br/&gt;0.045 × 1.30² × 1.65) ≈ 0.184 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="405" width="363" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v13" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;物镜 Y 向 2 项&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;K12 ≤ 0.080 nm/cm²；K18 ≤ 0.045 nm/cm³。&lt;br/&gt;机内 SET/GET 与片上 51×19 密点验收；&lt;br/&gt;K20 冷机静畸变另属 MMO。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="405" width="543" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="field-e14" parent="1" edge="1" source="field-v11" target="field-v12" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="field-e15" parent="1" edge="1" source="field-v12" target="field-v13" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v16" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D9 · 晶圆台 iHOPC / X&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;4 项；单层场角 RSS 0.228 nm。&lt;br/&gt;双层 ×1.20 → 0.274 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="576" width="351" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v17" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;K5 扫描斜行&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;δₓ = |ΔK₅| × 1.65&lt;br/&gt;0.070 nm/cm × 1.65 cm = 0.116 nm。&lt;br/&gt;采用角点口径，场 RMS 是另一个统计量。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="576" width="363" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v18" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;WS X 向 4 项&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;K1 ≤ 0.120 nm；K5 ≤ 0.070 nm/cm；&lt;br/&gt;K11 ≤ 0.040 nm/cm²；K19 ≤ 0.025 nm/cm³。&lt;br/&gt;成像验收测高密度场内标记，按规定基函数拟合残差。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="576" width="543" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="field-e19" parent="1" edge="1" source="field-v16" target="field-v17" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="field-e20" parent="1" edge="1" source="field-v17" target="field-v18" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v21" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D9 · 晶圆台 iHOPC / Y&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;7 项；单层场角 RSS 0.293 nm。&lt;br/&gt;双层 ×1.20 → 0.352 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="795" width="351" height="179" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v22" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;K4 扫描倍率&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;δᵧ = |ΔK₄| × 1.65 ≈ 0.116 nm。&lt;br/&gt;K4 离线伺服 ≤ 0.039 nm/cm，&lt;br/&gt;全链总残差 ≤ 0.070 nm/cm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="795" width="363" height="179" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v23" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;WS Y 向 7 项&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;K2 ≤ 0.120 nm；K4 / K6 ≤ 0.070 / 0.080 nm/cm；&lt;br/&gt;K8 / K10 ≤ 0.040 / 0.050 nm/cm²；&lt;br/&gt;K14 / K16 ≤ 0.025 / 0.030 nm/cm³。&lt;br/&gt;按 5.5 mm 狭缝曝光窗核对遥测和最终片上残差。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="795" width="543" height="179" as="geometry" />
+        </mxCell>
+        <mxCell id="field-e24" parent="1" edge="1" source="field-v21" target="field-v22" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="field-e25" parent="1" edge="1" source="field-v22" target="field-v23" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="field-v26" parent="1" vertex="1" value="来源　《九大核心子系统说明书 v2》§7.3–7.4、§9.3–9.4。×1.20 是仓库的层间残差预算系数，须在实际补偿条件下验证。系统 RSS 使用系数限值派生的角点值。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=15;spacingRight=15;spacingTop=0;spacingBottom=0;strokeColor=#E2C69E;fillColor=#FFF5E7;fontColor=#94511B;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="1000" width="1353" height="74" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="aberr" name="D10–D11 · 波像差与余项">
+    <mxGraphModel grid="0" guides="1" tooltips="1" connect="1" page="1" pageScale="1" pageWidth="1418" pageHeight="1097" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aberr-v1" parent="1" vertex="1" value="D10–D11 · 波像差与余项" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;strokeColor=none;fillColor=none;fontColor=#143344;fontFamily=Noto Sans CJK SC;fontSize=29;fontStyle=1;arcSize=4;">
+          <mxGeometry x="32" y="22" width="1353" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v2" parent="1" vertex="1" value="跨照明套刻使用差分灵敏度。D11 是账内的未建模扰动与量测本底分配，独立于闭环结果到 2.00 nm 的剩余空间。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;strokeColor=none;fillColor=none;fontColor=#446170;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="80" width="1353" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v3" parent="1" vertex="1" value="预算 / 传回 DCO" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="32" y="136" width="351" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v4" parent="1" vertex="1" value="传递 / 控制量定义" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="431" y="136" width="363" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v5" parent="1" vertex="1" value="子系统验收 / 指标" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=12;spacingRight=12;spacingTop=0;spacingBottom=0;strokeColor=#143344;fillColor=#143344;fontColor=#FFFFFF;fontFamily=Noto Sans CJK SC;fontSize=17;fontStyle=1;arcSize=4;">
+          <mxGeometry x="842" y="136" width="543" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v6" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D10 · 物镜 Odd Zernike&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;稳健包络：X/Y 各 0.370 nm。&lt;br/&gt;跨照明差分已含两层 → 系数 1.00。&lt;br/&gt;Abbe 仿真单轴 0.328 nm，作交叉核对。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="191" width="351" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v7" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;Z7 / Z8 彗差示例&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;eⱼ = |ΔSⱼ| × |ΔZⱼ|。&lt;br/&gt;0.950 nm/nm Fringe × 0.18 nm Fringe&lt;br/&gt;= 0.171 nm / 轴。&lt;br/&gt;按每一轴、每个模式 RSS。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="191" width="363" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v8" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;控制量与量测&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;每个 Z7/Z8 ≤ 0.18 nm Fringe，相当于 0.0636 nm RMS。&lt;br/&gt;单轴合成取 15 个对应方向的贡献，覆盖 30 个奇模式。&lt;br/&gt;PARIS/ILC 测量重复性 ≤ 0.12 nm RMS；多次测量、机内监测与片上跨照明配对，用于核验闭环残差。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="191" width="543" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-e9" parent="1" edge="1" source="aberr-v6" target="aberr-v7" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-e10" parent="1" edge="1" source="aberr-v7" target="aberr-v8" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v11" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D10 · 30 项模式限值&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;右表按 X/Y 成对列出。&lt;br/&gt;单位均为 nm Fringe，限值为绝对值。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="409" width="351" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v12" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;示例：Z10 / Z11 三叶项&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;0.910 × 0.16 = 0.146 nm / 轴。&lt;br/&gt;所有模式使用各自的跨照明包络。&lt;br/&gt;单轴 15 项见 §8.2 的对应灵敏度列。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="409" width="363" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v13" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;各模式对的容许幅值&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Z7/8 0.18　·　Z10/11 0.16　·　Z14/15 0.18&lt;br/&gt;Z19/20 0.20　·　Z23/24 0.24　·　Z26/27 0.16&lt;br/&gt;Z30/31 0.22　·　Z34/35 0.30　·　Z39/40 0.22&lt;br/&gt;Z43/44 0.30　·　Z47/48 0.35　·　Z50/51 0.24&lt;br/&gt;Z54/55 0.25　·　Z58/59 0.35　·　Z62/63 0.40" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="409" width="543" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-e14" parent="1" edge="1" source="aberr-v11" target="aberr-v12" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-e15" parent="1" edge="1" source="aberr-v12" target="aberr-v13" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v16" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;D11 · 未建模扰动与量测本底&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;单层 X/Y 各 0.250 nm。&lt;br/&gt;双层 ×√2 → 各 0.354 nm。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="659" width="351" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v17" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;合并分配&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;仓库为两类来源给出一个合并上限。&lt;br/&gt;单独贡献需要量具与印片的重复数据辨识。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="659" width="363" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v18" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;建议验证（待实测）&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;固定参考片重复读数估计量测重复性，再做重复曝光。&lt;br/&gt;检查去除已建模项后残差及其协方差，对照 0.250 nm 单层等效预算。保留设备、层对与量具条件。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="659" width="543" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-e19" parent="1" edge="1" source="aberr-v16" target="aberr-v17" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-e20" parent="1" edge="1" source="aberr-v17" target="aberr-v18" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v21" parent="1" vertex="1" value="&lt;font color=&quot;#00766B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;系统偏置 · |Mean|&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;每一轴预留 0.300 nm。&lt;br/&gt;对两层随机合成值作线性加法。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#E9F5F2;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="828" width="351" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v22" parent="1" vertex="1" value="&lt;font color=&quot;#225C7B&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;最终验收量&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;按轴从成对印片残差求均值和离散度。&lt;br/&gt;对片、场、点的同一抽样规则求 |Mean| + 3σ。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#F0F6FA;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="431" y="828" width="363" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v23" parent="1" vertex="1" value="&lt;font color=&quot;#143344&quot; style=&quot;font-size:19px&quot;&gt;&lt;b&gt;同机同台闭环&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;两轴分别对照 ≤ 2.00 nm。&lt;br/&gt;用实测协方差检查 D1–D11 的 RSS 假设；重新估计共享基线、热变化及层间相关对合成的影响。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=14;spacingRight=14;spacingTop=0;spacingBottom=0;strokeColor=#B8CDD1;fillColor=#FBFCFC;fontColor=#193443;fontFamily=Noto Sans CJK SC;fontSize=16;fontStyle=0;arcSize=4;">
+          <mxGeometry x="842" y="828" width="543" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-e24" parent="1" edge="1" source="aberr-v21" target="aberr-v22" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-e25" parent="1" edge="1" source="aberr-v22" target="aberr-v23" style="endArrow=blockThin;endFill=1;strokeWidth=1.6;strokeColor=#64838B;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aberr-v26" parent="1" vertex="1" value="来源　《九大核心子系统说明书 v2》§6、§8.1–8.2；《整机及子系统报告 v2》§0、§15。报告给出的控制幅值为分配规格，传递后才成为晶圆面套刻预算。" style="rounded=0;html=1;whiteSpace=wrap;verticalAlign=middle;align=left;spacingLeft=15;spacingRight=15;spacingTop=0;spacingBottom=0;strokeColor=#E2C69E;fillColor=#FFF5E7;fontColor=#94511B;fontFamily=Noto Sans CJK SC;fontSize=15;fontStyle=0;arcSize=4;">
+          <mxGeometry x="32" y="999" width="1353" height="74" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

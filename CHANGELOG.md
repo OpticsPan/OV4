@@ -6,6 +6,14 @@
 
 ---
 
+<a name="2026-11-25-dco-budget-tree"></a>
+
+## 2026-11-25　DCO 双层预算分配与子系统验收图
+
+按 5.5 mm 狭缝重算 D1，按晶圆侧 X、Y 两轴衔接 11 项双层预算及其子系统规格。新增[可编辑图](outputs/images/DCO_budget_v1.drawio)、[五页图册](outputs/images/DCO_budget_v1.pdf)、[公式工作簿](outputs/tables/DCO_budget_v1.xlsx)、[使用说明](outputs/reports/DCO_budget_notes_v1.md)及[详细日志](changes/2026-11-25-dco-budget-tree_v1.md)。
+
+---
+
 <a name="2026-11-25-github-web-md-standard"></a>
 
 ## 2026-11-25　新增仓库规定：GitHub 网页版阅读与公式渲染强制适配（UP-010）并完成 v2 报告全量适配
