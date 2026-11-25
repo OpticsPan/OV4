@@ -6,6 +6,21 @@
 
 ---
 
+<a name="2026-11-25-github-web-md-standard"></a>
+
+## 2026-11-25　新增仓库规定：GitHub 网页版阅读与公式渲染强制适配（UP-010）并完成 v2 报告全量适配
+
+- **详细变更日志**：[2026-11-25-github-web-md-math-standard_v1.md](changes/2026-11-25-github-web-md-math-standard_v1.md)
+- **规则与质检入口**：
+  - [USER_PREFERENCES.md (`UP-010`)](USER_PREFERENCES.md#up-010) · [REPOSITORY_MANAGEMENT.md 第 4.3 节](REPOSITORY_MANAGEMENT.md#sec-markdown) · [AGENTS.md](AGENTS.md)
+  - 自动化质检脚本：[outputs/code/audit_github_md_v1.py](outputs/code/audit_github_md_v1.py)
+- **同步修复的正式报告与构建脚本（数值 0 变更，纯 GitHub 网页版公式/排版升级）**：
+  - [九大子系统说明书 v2 MD](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [PDF v2](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.pdf) · [构建脚本](outputs/code/build_9subsys_doc_pdf_v2.py)
+  - [15 大类验收规格推导报告 v2 MD](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [PDF v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf) · [构建脚本](outputs/code/build_spec_pdf_v2.py)
+- **核验范围**：修复全部 167 处 GitHub MathJax 隐患（单行/深缩进 `$$` 改为 0 缩进多行 `$$` 块前后留空行、含 `≥2` 下划线/`*` 行内公式升级为 GitHub 官方 `` $`...`$ ``、表格内 `|`/`\|` 统一改 `\vert`、`\{`/`\}` 改 `\lbrace`/`\rbrace`、消除 `**$...$**`），`audit_github_md_v1.py` 链接与公式双项 `Errors: 0`，两份 PDF 重编译 0 报错 0 回退。
+
+---
+
 <a name="2026-11-25-reference-catalog"></a>
 
 ## 2026-11-25　归档全库参考文献清单总目（REFERENCES.md，251 份原件含新增 8 篇）

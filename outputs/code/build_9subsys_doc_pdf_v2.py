@@ -117,7 +117,9 @@ def convert_markdown(md):
         key = f"MATHRENDERPLACEHOLDER{n:04d}END"
         return f"\n\n{key}\n\n" if display else key
 
+    md = re.sub(r"```math\s*\r?\n(.*?)\r?\n```", lambda m: store(m, True), md, flags=re.S)
     md = re.sub(r"\$\$\s*(.*?)\s*\$\$", lambda m: store(m, True), md, flags=re.S)
+    md = re.sub(r"(?<!`)\$`([^`\r\n]+?)`\$", lambda m: store(m, False), md)
     md = re.sub(r"(?<!\\)\$(?!\$)([^$\r\n]+?)\$", lambda m: store(m, False), md)
     rendered = MarkdownIt("commonmark", {"html": True}).enable("table").render(md)
     for n, markup in enumerate(resources):

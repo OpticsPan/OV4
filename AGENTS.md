@@ -19,12 +19,12 @@
 ## 3. 成果归档与多形态交付
 
 - 正式成果统一保存至 `outputs/` 对应子目录：
-  - `outputs/reports/`：正式 Markdown 报告（`_vN.md`）与正式 PDF 报告（`_vN.pdf`）；
+  - `outputs/reports/`：正式 Markdown 报告（`_vN.md`，**必须严格遵守 [UP-010](USER_PREFERENCES.md#up-010) GitHub 网页版阅读与公式规范**）与正式 PDF 报告（`_vN.pdf`）；
   - `outputs/tables/`：动态公式 Excel 表格（`_vN.xlsx`）；
   - `outputs/images/`：白底高分辨率图件（`_vN.png`）；
-  - `outputs/code/`：可复现仿真、构建与 PDF 导出脚本（`_vN.py`）。
+  - `outputs/code/`：可复现仿真、构建、质检与 PDF 导出脚本（`_vN.py`）。
 - 临时计算与中间文件放入 `work/`（由 `.gitignore` 忽略）。
-- 导出 Excel 后须用 Excel 引擎重算确认 0 个公式错误；导出 PDF 后须重新打开核对页数、目录页码、书签并对宽表/公式页进行视觉抽检。
+- **提交前强制门禁**：运行 `python outputs/code/audit_github_md_v1.py` 确认 GitHub 网页公式/排版/链接审计 `Errors: 0`；导出 Excel 后须用 Excel 引擎重算确认 0 个公式错误；导出 PDF 后须重新打开核对页数、目录页码、书签并对宽表/公式页进行视觉抽检。
 
 ## 4. 每次更新后的强制同步清单
 
