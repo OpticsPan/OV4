@@ -1,8 +1,8 @@
-# OV4 参考文献完整清单总目（共 264 份本地原件 · 含新增 21 篇一手文献与专利）
+# OV4 参考文献完整清单总目（共 265 份本地原件 · 含新增 22 篇一手文献与专利）
 
-[仓库首页](README.md) · [成果索引](outputs/README.md) · [WS-RS 同步调研报告 v1](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md) · [九大子系统说明书 v2](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [总报告 v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [仓库规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
+[仓库首页](README.md) · [成果索引](outputs/README.md) · [NXT:1965Ci L0–L3 拆解报告 v1](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md) · [WS-RS 同步调研报告 v2](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md) · [九大子系统说明书 v2](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [总报告 v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [仓库规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
 
-> **归档说明**：受版权与大体积限制，本机原始 PDF 与 MinerU Markdown 文献库（`参考文献-整理版/`、`参考文献-整理版-Markdown/`、`参考文献_新增/`）由 [.gitignore](.gitignore) 排除、仅保留于本机只读目录；本文件作为 **Git 跟踪的全库唯一书目总目**，完整记录全部 **264 份原件**（SHA-256 去重后 **263 份唯一文献**）的编号、文件名、标题、类型、页数、校验指纹及引用状态，便于在 GitHub 网页端检索与评审溯源。
+> **归档说明**：受版权与大体积限制，本机原始 PDF 与 MinerU Markdown 文献库（`参考文献-整理版/`、`参考文献-整理版-Markdown/`、`参考文献_新增/`）由 [.gitignore](.gitignore) 排除、仅保留于本机只读目录；本文件作为 **Git 跟踪的全库唯一书目总目**，完整记录全部 **265 份原件**（SHA-256 去重后 **264 份唯一文献**）的编号、文件名、标题、类型、页数、校验指纹及引用状态，便于在 GitHub 网页端检索与评审溯源。
 
 <a name="contents"></a>
 
@@ -10,7 +10,7 @@
 
 - [0. 文献库统计总览与目录映射](#sec-0)
 - [1. 新增专项一手文献清单（参考文献_新增 · N1–N8，共 8 份）](#sec-new)
-- [1.2 新增 WS–RS 同步专项 USPTO 专利原件（参考文献_新增/WS-RS同步 · S1–S13，共 13 份）](#sec-wsrs-sync)
+- [1.2 新增 WS–RS 同步专项 USPTO 专利原件（参考文献_新增/WS-RS同步 · S1–S14，共 14 份）](#sec-wsrs-sync)
 - [2. 原始基线文献完整清单（参考文献-整理版 · 003–266，共 243 份）](#sec-base)
 - [3. 跨库配套引用手册（ME3 官方培训资料）与维护说明](#sec-me3)
 
@@ -24,10 +24,10 @@
 
 | 文献批次 | 本机只读目录 | 原件数 | 唯一 SHA-256 数 | 学术论文 | 专利 | 专著/硕博论文/标准 | 官方手册/规格书 | 核验/引用说明 |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **WS–RS 同步专项专利批次（2026-11-25）** | `D:\work\OV4\参考文献_新增\WS-RS同步\` | **13** | 13（全部唯一） | 0 | 13 | 0 | 0 | **13/13 篇 USPTO 官方原件完成封面视觉核验（8 ASML + 5 Nikon，366 页），纳入 [WS-RS 同步调研报告 v1](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md)** |
+| **WS–RS 同步专项专利批次（2026-11-25）** | `D:\work\OV4\参考文献_新增\WS-RS同步\` | **14** | 14（全部唯一） | 0 | 14 | 0 | 0 | **14/14 篇 USPTO 官方原件完成封面/关键页视觉核验（9 ASML + 5 Nikon，375 页，含新增 `[S14]` ASML 奠基同步专利 `US 6,373,072 B1`），纳入 [WS-RS 同步调研报告 v2](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md)** |
 | **新增专项批次（2026-11-24）** | `D:\work\OV4\参考文献_新增\` | **8** | 7（`[N4]` 同 `[010]`） | 7 | 1 | 0 | 0 | **8/8 全部完成全文核验并纳入说明书 v2** |
-| **原始基线库（OV4）** | `D:\work\OV4\参考文献-整理版\` | **243** | 243 | 168 | 62 | 5 | 8 | 同名 MinerU Markdown 存放于 `参考文献-整理版-Markdown\`；已在正式报告中直接引用 40+ 份核心条目 |
-| **合计** | — | **264** | **263** | **175** | **76** | **5** | **8** | 全库均保留原件 SHA-256 指纹供复查；另 8 篇待手动下载清单见 [调研报告第 5.3 节](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md#sec-5-3) |
+| **原始基线库（OV4）** | `D:\work\OV4\参考文献-整理版\` | **243** | 243 | 168 | 62 | 5 | 8 | 同名 MinerU Markdown 存放于 `参考文献-整理版-Markdown\`；已在正式报告中直接引用 45+ 份核心条目 |
+| **合计** | — | **265** | **264** | **175** | **77** | **5** | **8** | 全库均保留原件 SHA-256 指纹供复查；另 8 篇待手动下载清单见 [WS-RS 同步调研报告 v2 第 6.3 节](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md#sec-6-3) |
 
 ---
 
@@ -52,11 +52,11 @@
 
 <a name="sec-wsrs-sync"></a>
 
-## 1.2 新增 WS–RS 同步专项 USPTO 专利原件清单（`参考文献_新增/WS-RS同步/` · `[S1]–[S13]`，共 13 份）
+## 1.2 新增 WS–RS 同步专项 USPTO 专利原件清单（`参考文献_新增/WS-RS同步/` · `[S1]–[S14]`，共 14 份）
 
 [返回目录](#contents)
 
-> 说明：本批次 13 份专利全部自 USPTO 官方 PDF 接口合法直下并完成首页视觉核验与 SHA-256 去重校验（均与基线库 100% 唯一，合计 366 页），直接支撑 [WS-RS 同步策略与单台重复性误差专项调研报告 v1](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md)。另 8 篇待手动下载论文与非 US 专利清单（`[M1]–[M8]`）见该报告 [第 5.3 节](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md#sec-5-3)。
+> 说明：本批次 14 份专利全部自 USPTO 官方 PDF 接口合法直下并完成首页/关键页视觉核验与 SHA-256 去重校验（均与基线库 100% 唯一，合计 375 页），直接支撑 [WS-RS 同步策略与单台重复性误差专项调研报告 v2](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md)（[XT i-line/KrF 专题第 4 章](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md#sec-4)）。另 8 篇待手动下载论文与非 US 专利清单（`[M1]–[M8]`）见该报告 [第 6.3 节](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md#sec-6-3)。
 
 | 编号 | 本地 PDF 文件名（`参考文献_新增/WS-RS同步/`） | 权利人 | 专利号 | 页数 | SHA-256（前 12 位） | 核验后发明人、标题与核心支撑点 | 入库状态 |
 | :---: | :--- | :---: | :--- | :---: | :---: | :--- | :--- |
@@ -73,6 +73,7 @@
 | **`[S11]`** | `Nikon_US20060170382A1_LinearMotorForceRippleILC.pdf` | Nikon | `US 2006/0170382 A1` | 34 | `89c5de51cb9f` | P.-H. Yang, H. Hashimoto, B. Yuan, A. Yamaguchi, *Linear Motor Force Ripple Identification and Compensation with ILC*（2006，`[085]` 引用） | 全新入库（已核验） |
 | **`[S12]`** | `Nikon_US20120319637A1_SyncControlDevicesMethods.pdf` | Nikon | `US 2012/0319637 A1` | 72 | `8439247074ae` | **P.-H. Yang, K. Hirano, M. Yuasa**, *Synchronization Control Devices and Methods*（2012，`[085]` 引用）；首页框图实锤 `wafer error → H(s) → RS` 主从链路 | 全新入库（已核验） |
 | **`[S13]`** | `Nikon_US8451431B2_IFT_SyncControlStages.pdf` | Nikon | `US 8,451,431 B2` | 47 | `a629cbaeabc2` | P.-H. Yang, S.-L. Koo, *Control Systems and Methods Applying IFT for Feed-Forward and Synchronization Control...*（2013，`[147]` 引用） | 全新入库（已核验） |
+| **`[S14]`** | `ASML_US6373072B1_Butler_WS_ErrorFeedforward_to_RS.pdf` | ASML | `US 6,373,072 B1` | 9 | `5498a5161270` | **H. Butler, T. P. H. Warmerdam** (ASM Lithography B.V.), *Lithographic Projection Apparatus and Device Manufacturing Method*（1998 优先权 / 2002 授权，全 9 页视觉核验）；ASML 早期步进扫描（PAS 5500 / TWINSCAN AT·XT）`WS → RS` 位置+二阶微分加速度双路前馈奠基专利，Col. 7 实测 `MA X: 11.4 → 1.0 nm`（降 91.2%）、`MA Y: 4.3 → 1.1 nm` | **v2 新增入库（全 9 页核验）** |
 
 ---
 
@@ -343,7 +344,10 @@
 | 引用代号 | 来源资料 | 在 OV4 报告中的核心引用内容 |
 | :--- | :--- | :--- |
 | `ME3 12-TT-L3-L3-ME` | ASML TWINSCAN Level 3 Metrology Training Book（第 70 页） | 明确记录掩模侧（4×）曝光狭缝宽度 `22 mm`（除以 4 等于晶圆侧 `5.5 mm`），交叉确证 NA = 1.35 真实狭缝宽度。 |
-| `ME3 08-TT-L3-RSbook` | ASML TWINSCAN Level 3 Reticle Stage Training Book | 掩模台（RS）`5 mK` 水平层流气幕温控与高加速度动态扫描架构参考。 |
+| `ME3 08-TT-L3-RSbook` | ASML TWINSCAN Level 3 Reticle Stage Training Book | 掩模台（RS）`5 mK` 水平层流气幕温控、RS D-spec `2.0 m/s / 54 m/s²` 动态参数及 `SRSM`/`SRLF` 实测报表。 |
+| `ME3 09-TT-L3-WSbook` | ASML TWINSCAN Level 3 Wafer Stage Training Book | `AT/XT 850D & 1250D` WS Type-2 `0.50 m/s / 13.5 m/s²`、`SWLF` 静止 `MA/MSD` 实测报表与 `TSDP ≤ 2.1 nm`（`XT:1400 ≤ 2.0 nm`）限值。 |
+| `ME3 TT-PM-WS-3v1` | ASML TWINSCAN Level 2 Periodic Maintenance — Wafer Stage（Fig. 2.4） | `TSPE: Stages Performance Test` 固件界面截屏实证 **`Stages Error Coupling: Automatic / On / Off`** 开关（支撑 WS–RS 同步报告 v2 第 4 章）。 |
+| `ME3 01_AP-L1-Hardware` | ASML TWINSCAN Level 1 Hardware Introduction v2（Slides 20–22） | `AT:400B/C`（i-line）与 `AT:750/850`（KrF）整机速度、产能与套刻规格对比。 |
 | `ME3 08_AP_L2_LAB` | ASML TWINSCAN Level 2 Lens Aberration & Calibration Lab Manual | 投影物镜放大率对环境气压的灵敏度（`1–3 ppm/mbar`），用于第 9.2 节 `K3` 硬件总补偿 Range 第一性核算。 |
 
 ### 维护规则

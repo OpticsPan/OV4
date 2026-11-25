@@ -2,7 +2,7 @@
 
 本仓库（本机目录 `D:\work\OV4`，对应 GitHub `OpticsPan/OV4`）用于归档 ArF 液浸光刻机套刻误差预算、子系统验收规格推导、光学/物理仿真脚本、可计算 Excel 模型、正式 PDF 报告、逐条证据链 PPTX 演示文稿及完整变更历史。
 
-**快速导航**：[成果索引](outputs/README.md) · [参考文献总目](REFERENCES.md) · [九大子系统说明书 v2 MD](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [九大子系统说明书 v2 PDF](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.pdf) · [演示文稿 PPTX v2](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx) · [Excel 预算表 v2](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx) · [总报告 v2 PDF](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf) · [仓库管理规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
+**快速导航**：[成果索引](outputs/README.md) · [参考文献总目](REFERENCES.md) · [NXT:1965Ci L0–L3 拆解报告 v1](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md) · [L0–L3 draw.io 源图](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.drawio) · [WS-RS 同步调研报告 v2](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md) · [九大子系统说明书 v2 MD](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [演示文稿 PPTX v2](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx) · [仓库管理规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
 
 ---
 
@@ -14,6 +14,7 @@
 
 | 日期 | 变更内容 | 正式成果与日志链接 |
 | :--- | :--- | :--- |
+| 2026-11-25 | ① 新增仓库规范 **[UP-011] 默认报告格式为 `.md`**（未指定格式时不再冗余生成 PDF/Excel/PPTX）；② 将目标机台锚定至 **ASML `NXT:1965Ci`（`SMO ≤ 2.50 nm`、`MMO ≤ 4.50 nm`）**，吸收 `@github/Overlay3`、`Ref146` 与 `Ref009 Fig. 3` 像素核定发布 **`L0–L3` 全景拆解报告 v1**（闭环 `SMO 2.352 / DCO 2.244 / MMO 4.288 nm`），同步产出 **`Ref146 Fig. 3` 风格可编辑 `.drawio` 与 180 DPI `.png`**、用户四层误差传递框架评价及既有 `v2` 报告/PPTX 处置决策；③ 发布 **WS–RS 同步策略调研报告 v2**，新增 ASML `TWINSCAN XT` i-line/KrF 专题调研，下载并全 9 页视觉核验 ASML 早期奠基同步专利 **`[S14]` `US 6,373,072 B1`**（结合 `ME3 TSPE` 实锤全系仍是 **RS 跟从 WS**），`REFERENCES.md` 扩充至 **265 份原件 / 14 篇同步专利**。 | [NXT:1965Ci L0–L3 报告 v1](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md) · [可编辑 draw.io](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.drawio) · [全景 PNG](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.png) · [WS-RS 同步报告 v2](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md) · [UP-011 规范](USER_PREFERENCES.md#up-011) · [参考文献总目（S1–S14）](REFERENCES.md#sec-wsrs-sync) · [变更日志](changes/2026-11-25-nxt1965ci-l0-l3-budget-and-xt-sync_v1.md) |
 | 2026-11-25 | 新增 **WS–RS 同步策略（主从方向）与单台重复性误差专项调研报告 v1**（严格遵循 `UP-010` 网页公式适配）：系统论证 WS 独立误差可大于同步 `MA` 的数学与实机机理（`[075]` 实测 WS `0.48 nm` vs 同步 `0.108–0.200 nm`），核定 ASML/Nikon ArF·ArFi 横向同步均为 **WS=Master、RS=Slave**（含 ASML 双向 Double-Youla 演进），并自 USPTO 自动下载 **13 篇官方专利原件**（8 ASML + 5 Nikon，366 页，含 Nikon `US 2012/0319637 A1` 首页主从框图实锤）至本机 `参考文献_新增/WS-RS同步/`，同步登记至 `REFERENCES.md`（全库增至 264 份）并附 8 篇手动下载清单。 | [WS-RS 同步调研报告 v1 MD](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md) · [手动下载清单（8 篇）](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md#sec-5-3) · [参考文献总目（S1–S13）](REFERENCES.md#sec-wsrs-sync) · [变更日志](changes/2026-11-25-ws-rs-sync-master-slave-repeatability-survey_v1.md) |
 | 2026-11-25 | 重排同机同台 DCO 预算。按 5.5 mm 狭缝从两层套刻追到子系统验收指标，分轴复算 X 1.833 nm、Y 1.869 nm。 | [可编辑 draw.io](outputs/images/DCO_budget_v1.drawio) · [五页图册](outputs/images/DCO_budget_v1.pdf) · [公式表](outputs/tables/DCO_budget_v1.xlsx) · [使用说明](outputs/reports/DCO_budget_notes_v1.md) · [变更日志](changes/2026-11-25-dco-budget-tree_v1.md) |
 | 2026-11-25 | 新增仓库强制规定 **[UP-010] GitHub 网页版阅读与公式渲染适配规范**，上线自动化门禁脚本 `audit_github_md_v1.py`，并全量修复最新 `v2` 两份正式 Markdown 报告的 167 处 GitHub MathJax 隐患（多行 `$$` 前后空行无深缩进、复杂行内公式改用 `` $`...`$ ``、表内绝对值改 `\vert`、清除 `**$...$**` 与 `\{`/`\}`），同步升级两份 PDF 构建脚本并重编译核验 0 错。 | [UP-010 偏好细则](USER_PREFERENCES.md#up-010) · [仓库排版与公式规范](REPOSITORY_MANAGEMENT.md#sec-markdown) · [GitHub MD 门禁脚本](outputs/code/audit_github_md_v1.py) · [九大子系统说明书 v2 MD](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [总报告 v2 MD](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [变更日志](changes/2026-11-25-github-web-md-math-standard_v1.md) |
@@ -28,17 +29,18 @@
 
 ---
 
-## 当前主交付成果一览（默认指向最新 `v2`，`v1` 历史基线完整保留于 [成果索引](outputs/README.md)）
+## 当前主交付成果一览（默认指向最新版本，历史基线完整保留于 [成果索引](outputs/README.md)）
 
 | 交付形态 | 文件入口 | 说明 |
 | :--- | :--- | :--- |
-| **专题调研报告（WS–RS 同步策略 v1）** | [WS-RS 同步策略与单台重复性调研报告 v1 MD](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md) | 论证 WS 独立误差 > 同步 MA 机理、ASML/Nikon ArF·ArFi 主从方向专利铁证（含 13 篇 USPTO 已下载原件）与 8 篇手动下载清单 |
+| **NXT:1965Ci 套刻拆解与误差传递（最新目标 v1）** | [NXT:1965Ci L0–L3 报告 v1 MD](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md) · [可编辑 draw.io](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.drawio) · [180 DPI PNG](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.png) | 锚定 `NXT:1965Ci`（`SMO ≤ 2.50 / MMO ≤ 4.50 nm`）与 `Ref009 Fig. 3` 像素比例，吸收 `@github/Overlay3` 与 `Ref146` DAG 共享源架构，含用户四层传递思路评价及既有 `v2` 报告/PPTX 处置方案 |
+| **专题调研报告（WS–RS 同步策略 v2）** | [WS-RS 同步策略与单台重复性调研报告 v2 MD](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md) | 覆盖 ArF/ArFi 与 ASML `TWINSCAN XT`（i-line/KrF）全谱系主从方向与实机参数，含 14 篇 USPTO 专利原件（新增 `[S14]` `US 6,373,072 B1`）、`ME3` 官方手册实测及 8 篇手动下载清单 |
 | **九大子系统推导说明书（MD / PDF v2）** | [说明书 MD v2](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [说明书 PDF v2](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.pdf) | 19 页 / 35 书签，已完成 `参考文献_新增` 全部 8 篇一手文献 `[N1–N8]` 全文核验，覆盖 5.5 mm 原表铁证、Heertjes 频域定理与白噪下限剖析、IBM/ASML Table 4 实证及双平面操纵器正交架构 |
 | **逐条证据链演示文稿（PPTX v2）** | [NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx](outputs/presentations/NXT1950i-1970i套刻目标_15大类子系统验收规格与逐条证据链_v2.pptx) | 28 页 16:9 白底高清汇报版，保留 v1 全部 22 页证据链并新增 6 页深度验收专题（WS/RS 反驳与单往返细则、物镜 8 维评价、WS K4 审视、狭缝逆卷积三联图解） |
 | **动态公式 Excel 预算表（XLSX v2）** | [NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx](outputs/tables/NXT1950i-1970i套刻目标_15大类子系统验收规格与误差预算表_v2.xlsx) | 9 个工作表、686 个跨页动态公式（已由 Excel 实算 0 错），新增 Sheet 07–09（WS/RS 验收、WS iHOPC 与逆卷积计算器、物镜 8 维能力表） |
 | **综合推导报告（Markdown v2）** | [NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) | 覆盖 15 大类规格、全部四大深度专题公式推导与 FAT/SAT 细则（GitHub 网页直读） |
 | **综合推导报告（PDF v2）** | [NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.pdf) | 30 页印刷级排版，含执行 KPI 封面、页码目录、45 条侧边书签、STIX 矢量公式及横版宽表 |
-| **可复现计算与构建代码** | [outputs/code/](outputs/code/) | [GitHub MD 门禁](outputs/code/audit_github_md_v1.py) · [九大子系统 PDF v2](outputs/code/build_9subsys_doc_pdf_v2.py) · [Excel v2](outputs/code/build_spec_excel_v2.py) · [PDF v2](outputs/code/build_spec_pdf_v2.py) · [PPTX v2](outputs/code/build_spec_pptx_v2.py) · [Abbe 仿真](outputs/code/sim_zernike_ovl_v1.py) |
+| **可复现计算与构建代码** | [outputs/code/](outputs/code/) | [NXT:1965Ci 图生成器](outputs/code/build_nxt1965ci_l0_l3_diagram_v1.py) · [GitHub MD 门禁](outputs/code/audit_github_md_v1.py) · [九大子系统 PDF v2](outputs/code/build_9subsys_doc_pdf_v2.py) · [Excel v2](outputs/code/build_spec_excel_v2.py) · [PDF v2](outputs/code/build_spec_pdf_v2.py) · [PPTX v2](outputs/code/build_spec_pptx_v2.py) · [Abbe 仿真](outputs/code/sim_zernike_ovl_v1.py) |
 
 ---
 
@@ -46,11 +48,11 @@
 
 | 目录 / 文件 | 用途说明 |
 | :--- | :--- |
-| [REPOSITORY_MANAGEMENT.md](REPOSITORY_MANAGEMENT.md) | 仓库管理规范（目录、版本、首页更新、公式排版、PDF/Excel 校验、只读保护） |
-| [USER_PREFERENCES.md](USER_PREFERENCES.md) | 用户长期偏好记录（`UP-001`–`UP-010`） |
+| [REPOSITORY_MANAGEMENT.md](REPOSITORY_MANAGEMENT.md) | 仓库管理规范（目录、版本、首页更新、公式排版、默认 `.md` 规范、只读保护） |
+| [USER_PREFERENCES.md](USER_PREFERENCES.md) | 用户长期偏好记录（`UP-001`–`UP-011`） |
 | [AGENTS.md](AGENTS.md) | AI 助手与协作者启动规范及交付同步清单 |
-| [REFERENCES.md](REFERENCES.md) | **全库参考文献清单总目**（Git 跟踪，含新增 8 篇 `[N1–N8]` + WS–RS 同步专利 13 篇 `[S1–S13]` + 基线 243 份 `[003–266]` + 3 份 ME3 配套手册与 SHA-256 指纹） |
+| [REFERENCES.md](REFERENCES.md) | **全库参考文献清单总目**（Git 跟踪，含新增 8 篇 `[N1–N8]` + WS–RS 同步专利 14 篇 `[S1–S14]` + 基线 243 份 `[003–266]` + 6 份 ME3 配套手册与 SHA-256 指纹，共 265 份原件） |
 | [CHANGELOG.md](CHANGELOG.md) / [changes/](changes/) | 全局变更时间轴与逐次详细变更日志 |
 | [outputs/](outputs/README.md) | 正式成果分类目录（`reports/`、`tables/`、`presentations/`、`images/`、`code/`） |
-| `参考文献-整理版/`、`参考文献-整理版-Markdown/`、`参考文献_新增/` | **本机只读原始参考文献库**（基线 243 篇 + 新增 8 篇 + WS–RS 同步专利 13 篇，由 `.gitignore` 忽略不推送至 GitHub） |
+| `参考文献-整理版/`、`参考文献-整理版-Markdown/`、`参考文献_新增/` | **本机只读原始参考文献库**（基线 243 篇 + 新增 8 篇 + WS–RS 同步专利 14 篇，由 `.gitignore` 忽略不推送至 GitHub） |
 | `work/` | 本地临时计算与导出缓存（由 `.gitignore` 忽略） |

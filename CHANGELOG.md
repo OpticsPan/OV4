@@ -6,6 +6,21 @@
 
 ---
 
+<a name="2026-11-25-nxt1965ci-l0-l3-and-xt-sync"></a>
+
+## 2026-11-25　修订默认 `.md` 规范（UP-011）、新增 NXT:1965Ci（SMO 2.5 / MMO 4.5）L0–L3 拆解报告与 draw.io 源图、升级 WS–RS 同步报告 v2（含 XT i-line/KrF 专题与 `[S14]` 专利）
+
+- **详细变更日志**：[2026-11-25-nxt1965ci-l0-l3-budget-and-xt-sync_v1.md](changes/2026-11-25-nxt1965ci-l0-l3-budget-and-xt-sync_v1.md)
+- **规则更新**：新增 [UP-011（未指定报告格式时默认仅整理为 `.md`）](USER_PREFERENCES.md#up-011)，同步修订 [REPOSITORY_MANAGEMENT.md 第 5 节](REPOSITORY_MANAGEMENT.md#sec-artifacts) 与 [AGENTS.md](AGENTS.md)。
+- **正式交付入口**：
+  - [ASML NXT:1965Ci（SMO 2.50 / MMO 4.50 nm）L0–L3 套刻指标拆解与误差传递报告 v1 MD](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md)（[全景拆解图](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md#sec-1) · [Ref009 Fig. 3 像素核定与闭环](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md#sec-2) · [用户四层误差传递思路评价](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md#sec-4) · [既有报告/PPTX 决策](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md#sec-5)）
+  - [L0–L3 全景拆解图可编辑 draw.io 源图](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.drawio) · [180 DPI 高清 PNG](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.png) · [单一事实源生成脚本](outputs/code/build_nxt1965ci_l0_l3_diagram_v1.py)
+  - [ArF / ArFi 及 ASML TWINSCAN XT（i-line / KrF）WS–RS 同步策略调研报告 v2 MD](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md)（完整保留 `v1`，新增 [第 4 章 XT i-line/KrF 专题](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md#sec-4)）
+  - [参考文献总目 REFERENCES.md（新增 `[S14]` `US 6,373,072 B1`，全库 265 份原件）](REFERENCES.md#sec-wsrs-sync)
+- **核验要点**：融合 `@github/Overlay3` 与 `Ref146` DAG 共享源框架及 `Ref009 Fig. 3` 像素测量闭环 `SMO 2.352 ≤ 2.50 nm` / `DCO 2.244 nm` / `MMO 4.288 ≤ 4.50 nm`；新下载并视觉核验 ASML 早期 `WS → RS` 奠基同步专利 `US 6,373,072 B1`（全 9 页）及 `ME3 TSPE` GUI 截图，证实 XT i-line/KrF 依然全部采用 RS 跟从 WS；全仓经 `audit_github_md_v1.py` 质检双项 `Errors: 0`。
+
+---
+
 <a name="2026-11-25-ws-rs-sync-survey-v1"></a>
 
 ## 2026-11-25　新增 WS–RS 同步策略（主从方向）与单台重复性误差专项调研报告 v1（含 13 篇 USPTO 专利入库）

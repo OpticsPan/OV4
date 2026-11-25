@@ -4,7 +4,7 @@
 
 本文件是 `OV4`（先进光刻机套刻误差控制与子系统验收规格）仓库管理规则的唯一维护位置，适用于本机工作目录 `D:\work\OV4` 及对应的 GitHub 仓库 `OpticsPan/OV4`。
 
-**核心原则：所有正式成果以 GitHub 网页直接阅读为主，辅以可计算表格与印刷级 PDF；每次更新均须同步首页更新历史与变更日志，最近更新始终排在最前面。**
+**核心原则：未指定报告格式时，报告默认仅整理为 GitHub 网页版 Markdown（`.md`）（见 [UP-011](USER_PREFERENCES.md#up-011)），仅在用户明确要求时同步提供 Excel / PDF / PPTX / draw.io 等附加格式；每次更新均须同步首页更新历史与变更日志，最近更新始终排在最前面。**
 
 <a name="contents"></a>
 
@@ -14,7 +14,7 @@
 - [2. 首页更新历史展示规范](#sec-homepage)
 - [3. 变更记录与版本命名规则](#sec-versioning)
 - [4. 文档排版、公式与导航规范](#sec-markdown)
-- [5. PDF 与 Excel 多形态交付规范](#sec-artifacts)
+- [5. 默认报告格式（UP-011）与按需多形态交付规范](#sec-artifacts)
 - [6. 只读参考资料区保护红线](#sec-readonly)
 - [7. 提交与同步前自检清单](#sec-checklist)
 
@@ -108,15 +108,16 @@
 
 <a name="sec-artifacts"></a>
 
-## 5. PDF 与 Excel 多形态交付规范
+## 5. 默认报告格式（UP-011）与按需多形态交付规范
 
 [返回目录](#contents)
 
-1. **数值一致性**：同一专题的 Markdown、PDF、Excel 三份交付物必须保持 100% 数值一致（均由同一份计算数据源与验证脚本产出）。
-2. **Excel 规范**：
+1. **默认报告格式（[UP-011](USER_PREFERENCES.md#up-011)）**：以后若任务未明确指定报告格式，报告**默认仅整理并交付为 Markdown（`.md`）格式**，严禁冗余自动导出 PDF / Excel / PPTX；仅当用户显式指定附加格式（如 `.drawio`、`.png`、`.xlsx`、`.pdf`、`.pptx`）时再按以下质量规范同步生成。
+2. **数值一致性**：当同一专题同步交付多种格式（Markdown / PDF / Excel / draw.io）时，必须保持 100% 数值一致（均由同一份计算数据源或验证脚本产出）。
+3. **Excel 规范（按需生成时适用）**：
    - 所有汇总、放大系数、RSS 闭合与百分比必须采用原生动态 Excel 公式，不得硬编码计算结果；
    - 交付前须经 Microsoft Excel 引擎重算并保存缓存值，核验公式错误数 `FormulaErrorsCount = 0`。
-3. **PDF 规范**：
+4. **PDF 规范（按需生成时适用）**：
    - 正式 PDF 由可复现脚本（`outputs/code/build_*_pdf_v1.py`）从对应正式 Markdown 导出，使用无头浏览器 + 矢量数学公式渲染，并由 PyMuPDF 写入精确页码目录、PDF 侧边栏书签（Outline）与元数据；
    - 含宽表（如 13 列以上 iHOPC / Zernike 表格）的章节必须使用横向 A4 页面或响应式列宽，确保零裁切、零文字重叠；
    - 交付前必须重新打开生成的 PDF，核查总页数、书签跳转有效性，并对封面/目录、公式页及宽表页进行视觉抽检。

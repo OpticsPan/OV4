@@ -16,15 +16,16 @@
 - 查阅文献时优先检索 Markdown 版本，遇到关键公式、参数表（如 iHOPC 映射表）、高密度图表或 OCR 疑似合并单元格时，**必须回看原始 PDF 页面或提取原图做视觉核验**。
 - 引用时逐处注明文献编号、作者/年份、图号/表号或章节号；明确区分“直接调研实测”、“物理/光学仿真计算”与“预算反推预估”。
 
-## 3. 成果归档与多形态交付
+## 3. 成果归档与默认交付格式
 
+- **默认报告格式（[UP-011](USER_PREFERENCES.md#up-011)）**：未明确指定报告格式时，报告**默认仅整理为 Markdown（`.md`）格式**，不冗余导出 PDF / Excel / PPTX；仅当任务显式指定时再附加生成对应格式。
 - 正式成果统一保存至 `outputs/` 对应子目录：
-  - `outputs/reports/`：正式 Markdown 报告（`_vN.md`，**必须严格遵守 [UP-010](USER_PREFERENCES.md#up-010) GitHub 网页版阅读与公式规范**）与正式 PDF 报告（`_vN.pdf`）；
-  - `outputs/tables/`：动态公式 Excel 表格（`_vN.xlsx`）；
-  - `outputs/images/`：白底高分辨率图件（`_vN.png`）；
-  - `outputs/code/`：可复现仿真、构建、质检与 PDF 导出脚本（`_vN.py`）。
+  - `outputs/reports/`：正式 Markdown 报告（`_vN.md`，**必须严格遵守 [UP-010](USER_PREFERENCES.md#up-010) GitHub 网页版阅读与公式规范**）及按需生成的正式 PDF 报告（`_vN.pdf`）；
+  - `outputs/tables/`：按需生成的动态公式 Excel 表格（`_vN.xlsx`）；
+  - `outputs/images/`：白底高分辨率图件（`_vN.png`）与可编辑架构图源文件（`_vN.drawio`）；
+  - `outputs/code/`：可复现仿真、绘图、质检与按需导出脚本（`_vN.py`）。
 - 临时计算与中间文件放入 `work/`（由 `.gitignore` 忽略）。
-- **提交前强制门禁**：运行 `python outputs/code/audit_github_md_v1.py` 确认 GitHub 网页公式/排版/链接审计 `Errors: 0`；导出 Excel 后须用 Excel 引擎重算确认 0 个公式错误；导出 PDF 后须重新打开核对页数、目录页码、书签并对宽表/公式页进行视觉抽检。
+- **提交前强制门禁**：运行 `python outputs/code/audit_github_md_v1.py` 确认 GitHub 网页公式/排版/链接审计 `Errors: 0`；若本次交付含 Excel，须用 Excel 引擎重算确认 0 个公式错误；若本次交付含 PDF / PNG / draw.io，须进行视觉核检确认无截断或文字重叠。
 
 ## 4. 每次更新后的强制同步清单
 

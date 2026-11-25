@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-25T15:00:00.000Z" agent="OV4-NXT1965Ci-Builder" version="24.7.0" type="device">
+  <diagram id="nxt1965ci-l0-l3" name="NXT1965Ci_L0-L3套刻指标拆解图">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2280" pageHeight="1480" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="t11" value="ASML NXT:1965Ci 套刻指标 L0 → L1 → L2 → L3 全链路拆解与误差传递图（对标 Ref146 Fig.3 &amp; Ref009 Fig.3）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="40" y="14" width="1580" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="t12" value="左→右：预算拆解（SMO ≤ 2.50 nm, MMO ≤ 4.50 nm）｜ 右→左：误差传递 x → f(x;p) → F(f,x;P) → L0" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=12;fontStyle=0;fontColor=#475569;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="18" width="600" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="t13" value="&lt;b&gt;L0 整机套刻指标&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#475569&quot;&gt;MMO ≤ 4.50 nm / SMO ≤ 2.50 nm&lt;br/&gt;合成：RSS(随机 3σ) + 线性(|Mean|)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#1E293B;strokeWidth=1.5;align=left;spacingLeft=8;fontSize=12;fontColor=#1E293B;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="40" y="64" width="290" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="t14" value="&lt;b&gt;L1 子系统/功能域总体预算 F_k(f,x; P)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#475569&quot;&gt;按 Ref009 Fig.3 六大功能域 + C2C/跨机匹配&lt;br/&gt;含整机配方参数 P（扫速/照明/卡盘/APC）&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#1E3A8A;strokeWidth=1.5;align=left;spacingLeft=8;fontSize=12;fontColor=#1E3A8A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="64" width="380" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="t15" value="&lt;b&gt;L2 执行动作 / 物理可观测中间层 f_j(x; p)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#475569&quot;&gt;可实测的像面/位置/热/夹持中间误差（两层 3σ）&lt;br/&gt;含子系统配方参数 p（标记/狭缝/场序/控制）&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#065F46;strokeWidth=1.5;align=left;spacingLeft=8;fontSize=12;fontColor=#065F46;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="64" width="420" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="t16" value="&lt;b&gt;L3 底层可量化子系统指标 x_i（原生非套刻物理量纲）&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#475569&quot;&gt;传感器噪声、伺服重复性、温控 mK、Zernike OPD、机械滑移等&lt;br/&gt;★ 橙框为多路径共享源（DAG 交叉连线，保留协方差且严禁重复计数）&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#9A3412;strokeWidth=1.5;align=left;spacingLeft=8;fontSize=12;fontColor=#9A3412;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="64" width="770" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="L0_MMO" value="&lt;b&gt;L0-A 混机套刻 MMO ≤ 4.50 nm&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;闭环 4.29 nm = |Mean| 0.50 + 3σ 3.79 nm&lt;br/&gt;裕度 0.21 nm (4.7%) · 全晶圆 99.7%&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EDE9FE;strokeColor=#5B21B6;strokeWidth=2.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="40" y="155" width="290" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="L0_MMO_M" value="&lt;b&gt;跨机系统残余均值 |Mean|_MMO&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;0.50 nm（线性叠加，含参考片零点与 APC 残差）&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F3F4F6;strokeColor=#4B5563;strokeWidth=2.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="40" y="315" width="290" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="L0_SMO" value="&lt;b&gt;L0-B 单机套刻 SMO ≤ 2.50 nm&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;闭环 2.35 nm = |Mean| 0.35 + 3σ 2.00 nm&lt;br/&gt;裕度 0.15 nm (6.0%) · 双卡盘全片&lt;br/&gt;(同卡盘 DCO = 2.24 nm · 对标 Ref009 Fig.3)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#B45309;strokeWidth=2.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="40" y="645" width="290" height="145" as="geometry"/>
+        </mxCell>
+        <mxCell id="L0_SMO_M" value="&lt;b&gt;单机系统残余均值 |Mean|_SMO&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;0.35 nm（线性叠加，APC 校准后系统偏置）&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F3F4F6;strokeColor=#4B5563;strokeWidth=2.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="40" y="825" width="290" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="M1" value="&lt;b&gt;M1 跨机栅格与工件台网格匹配　2.00 nm&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;NXT 跨机 Gridplate 标定残差 (Ref009 §6.1: ~2 nm)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F3E8FF;strokeColor=#7C3AED;strokeWidth=1.6;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="115" width="380" height="66" as="geometry"/>
+        </mxCell>
+        <mxCell id="M2" value="&lt;b&gt;M2 跨机物镜静态畸变与像差匹配　1.90 nm&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;静态高阶 NCE 1.60 + 奇像差 0.50 + 热失配 0.90 (RSS)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F3E8FF;strokeColor=#7C3AED;strokeWidth=1.6;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="195" width="380" height="66" as="geometry"/>
+        </mxCell>
+        <mxCell id="M3" value="&lt;b&gt;M3 跨机卡盘/翘曲/对准/热匹配　1.65 nm&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;WT 翘曲 1.00 + WAD/TIS 1.00 + 跨机热 0.85 (RSS)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F3E8FF;strokeColor=#7C3AED;strokeWidth=1.6;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="275" width="380" height="66" as="geometry"/>
+        </mxCell>
+        <mxCell id="F1" value="&lt;b&gt;F1 运动台定位与同步　0.86 nm (3σ)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;Ref009 Fig.3 占比 20.0% (本模型 DCO6 20.2% / SMO 18.5%)&lt;br/&gt;F1(f1, f2; P_scan, P_iHOPC) · RSS 合成&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#3730A3;strokeWidth=1.6;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="385" width="380" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="F2" value="&lt;b&gt;F2 晶圆与掩模对准　0.96 nm (3σ)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;Ref009 Fig.3 占比 25.6% (本模型 DCO6 25.2% / SMO 23.0%)&lt;br/&gt;F2(f3, f4; P_WA, P_RA) · RSS 合成&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FEF9C3;strokeColor=#A16207;strokeWidth=1.6;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="495" width="380" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="F3" value="&lt;b&gt;F3 光学柱与动态像差　0.66 nm (3σ)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;Ref009 Fig.3 占比 12.0% (本模型 DCO6 11.9% / SMO 10.9%)&lt;br/&gt;F3(f5, f6, f7; P_illum, P_LM) · RSS 合成&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ECFCCB;strokeColor=#4D7C0F;strokeWidth=1.6;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="615" width="380" height="108" as="geometry"/>
+        </mxCell>
+        <mxCell id="F4" value="&lt;b&gt;F4 晶圆热与液浸流场　0.77 nm (3σ)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;Ref009 Fig.3 占比 16.0% (本模型 DCO6 16.2% / SMO 14.8%)&lt;br/&gt;F4(f8, f9; P_dose, P_seq, P_flow) · RSS 合成&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#CFFAFE;strokeColor=#0E7490;strokeWidth=1.6;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="755" width="380" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="F5" value="&lt;b&gt;F5 掩模热与夹持　0.80 nm (3σ)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;Ref009 Fig.3 占比 18.0% (本模型 DCO6 17.5% / SMO 16.0%)&lt;br/&gt;F5(f10, f11, f12; P_RHC, P_ret) · RSS 合成&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#1D4ED8;strokeWidth=1.6;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="875" width="380" height="114" as="geometry"/>
+        </mxCell>
+        <mxCell id="F6" value="&lt;b&gt;F6 晶圆夹持与台面接口　0.57 nm (3σ)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;Ref009 Fig.3 占比 8.4% (本模型 DCO6 8.9% / SMO 8.1%)&lt;br/&gt;F6(f13; P_clamp, P_scan) · 独立项&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F5F5DC;strokeColor=#78716C;strokeWidth=1.6;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1020" width="380" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="F7" value="&lt;b&gt;F7 双台卡盘差与量测底噪　0.59 nm (3σ)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;DCO → 双台 SMO 增量 (SMO 占比 8.7%)&lt;br/&gt;F7(f14, f15; P_chuck, P_eval) · RSS 合成&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCE7F3;strokeColor=#BE185D;strokeWidth=1.6;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1135" width="380" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m_l2_1" value="&lt;b&gt;m1 跨机参考片多移位网格残差 (2.00 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;p_cal: 13×19 网格标定片 · 扣除镜头指纹 [N7]&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F3E8FF;strokeColor=#7C3AED;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="115" width="420" height="58" as="geometry"/>
+        </mxCell>
+        <mxCell id="m_l2_2" value="&lt;b&gt;m2 跨机静态畸变/奇像差/镜头热失配 (1.90 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;p_opt: 两台物镜无 K20 残差 + 跨机照明敏感度&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F3E8FF;strokeColor=#7C3AED;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="186" width="420" height="58" as="geometry"/>
+        </mxCell>
+        <mxCell id="m_l2_3" value="&lt;b&gt;m3 跨机吸盘指纹与 WAD/热环境失配 (1.65 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;p_fab: 50 μm 翘曲片 + 双机对准/RHC 差异&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F3E8FF;strokeColor=#7C3AED;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="257" width="420" height="58" as="geometry"/>
+        </mxCell>
+        <mxCell id="f1" value="&lt;b&gt;f1 曝光窗 WS–RS 相对扫描轨迹 MA (0.77 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 单层 0.54 nm (平移 0.51 + Rz 0.20) · p_S: 0.70 m/s, 5.5 mm&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#3730A3;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="360" width="420" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="f2" value="&lt;b&gt;f2 WS-iHOPC 11 项场内轨迹执行残差 (0.38 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 ×1.20 · 单层场角 0.32 nm · p_C: K1–K2, K4–K6, K8,10,11,14,16,19&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#3730A3;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="426" width="420" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="f3" value="&lt;b&gt;f3 M-side 晶圆网格拟合与 M→E 基线 (0.68 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 单层 0.48 nm (网格 0.40 + 短基线 0.27) · p_A: ≥20 标记&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FEF9C3;strokeColor=#A16207;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="490" width="420" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="f4" value="&lt;b&gt;f4 E-side 掩模空间像对准 RA 残差 (0.68 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 单层 0.48 nm (7 点 PARIS / TIS 拟合) · p_R: 逐片重对准&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FEF9C3;strokeColor=#A16207;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="556" width="420" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="f5" value="&lt;b&gt;f5 Lens-iHOPC 8 项像场校正残差 (0.40 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 ×1.20 · 单层场角 0.33 nm · p_C: K3, K7, K9, K12–13, K15,17–18&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ECFCCB;strokeColor=#4D7C0F;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="622" width="420" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="f6" value="&lt;b&gt;f6 Odd Zernike 跨照明像移残差 (0.42 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层直接差分 ×1.00 · p_illum: 照明 A/B 切换 (Z5–Z64 30 项)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ECFCCB;strokeColor=#4D7C0F;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="684" width="420" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="f7" value="&lt;b&gt;f7 物镜热波前与声学/阻尼动态漂移 (0.32 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 单层 0.23 nm · FlexWave 闭环 + 静音 RS/隔声罩&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ECFCCB;strokeColor=#4D7C0F;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="746" width="420" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="f8" value="&lt;b&gt;f8 晶圆热变形与液浸蒸发冷缩残差 (0.71 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 单层 0.50 nm (WT+蒸发 0.44 + WH 瞬态 0.24) · p_T: 剂量/场序&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#CFFAFE;strokeColor=#0E7490;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="808" width="420" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="f9" value="&lt;b&gt;f9 浸没水膜温场折射率畸变 (0.30 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 单层 0.21 nm · p_flow: 供水流量与喷嘴流场&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#CFFAFE;strokeColor=#0E7490;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="874" width="420" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="f10" value="&lt;b&gt;f10 掩模热变形 RHC 补偿后残差 (0.55 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 单层 0.39 nm · p_T: 透射率、剂量、扫描热史&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#1D4ED8;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="934" width="420" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="f11" value="&lt;b&gt;f11 掩模-物镜气隙湍流折射像移 (0.45 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 单层 0.32 nm · 气幕温度梯度波动&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#1D4ED8;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="994" width="420" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="f12" value="&lt;b&gt;f12 掩模重夹变形与折返微滑移 (0.37 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 单层 0.26 nm (重夹 0.185 + 微滑移 0.185)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#1D4ED8;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="1054" width="420" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="f13" value="&lt;b&gt;f13 晶圆重夹 IPD 与 WT–MB 回程滑移 (0.57 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 单层 0.40 nm (重夹 0.34 + 折返滑移 0.22) · p_clamp&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F5F5DC;strokeColor=#78716C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="1114" width="420" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="f14" value="&lt;b&gt;f14 双卡盘 A/B 换台网格与 TIS 匹配 ΔC2C (0.48 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;双台 SMO 激活 (单卡盘 DCO 时置 0) · p_chuck: A/B 切换&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCE7F3;strokeColor=#BE185D;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="1180" width="420" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="f15" value="&lt;b&gt;f15 离线套刻后测底噪与未建模余项 (0.34 nm)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;两层 3σ · 含套刻量测 TMU 与短时未建模随机底噪 · p_eval&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCE7F3;strokeColor=#BE185D;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="910" y="1240" width="420" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="x01" value="&lt;b&gt;x01 WS 6-DOF 运动与轨迹执行&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;X/Y ≤ 0.38/0.42 nm, Rz ≤ 14 nrad, Z ≤ 4.5 nm (@ 0.70 m/s); WS-iHOPC K4 ≤ 0.08 nm/cm&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="115" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x02" value="&lt;b&gt;x02 RS 6-DOF 运动重复性 (4× 掩模侧)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;X/Y ≤ 1.12/1.28 nm, Rz ≤ 10 nrad (1:1 耦合), Z ≤ 24 nm (@ 2.80 m/s, 150 m/s²)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="181" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x03" value="&lt;b&gt;x03 ENC 光栅编码器与栅格基准 ★共享源&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;WS 曝光窗 ≤ 0.14 nm (1 kHz 原始 0.22 nm); RS ≤ 0.40 nm; 栅格尺度稳定性 ~10 ppb&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="247" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x04" value="&lt;b&gt;x04 计量框架 MF 相对稳定性 ★共享源&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;框架–物镜动 MA ≤ 0.18 nm / Rz ≤ 4.5 nrad; M→E 短期热漂 ≤ 0.20 nm&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="313" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x05" value="&lt;b&gt;x05 AA/SMASH 晶圆对准测头&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;标准片单标记 静 ≤ 0.22 nm / 动 ≤ 0.40 nm (3σ); 多色偏振抗工艺非对称&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="379" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x06" value="&lt;b&gt;x06 TIS / PARIS 空间像与波前传感 ★共享源&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;TIS 单点 ≤ 0.40 nm; PARIS 7 点 ≤ 0.45 nm, 波前测噪 ≤ 0.15 nm RMS&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="445" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x07" value="&lt;b&gt;x07 物镜操纵器与 Lens Model ★共享源&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;K3 ≤ 0.11 nm/cm (硬件 Range ±15–25 ppm), 步长 ≤ 0.01 nm/cm, 滞后 ≤ 0.2 ms&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="511" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x08" value="&lt;b&gt;x08 物镜 Odd Fringe Zernike (Z5–Z64) ★共享源&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;Z7/Z8 ≤ 0.20 nm Fringe, 全 30 项 0.38 nm RMS; 静态高阶 NCE ≤ 1.2–1.6 nm&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="577" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x09" value="&lt;b&gt;x09 物镜热态控制与声学隔振结构&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;FlexWave 局部热控 + 阻尼物镜 + 静音 RS 气浮与声学屏蔽罩&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="643" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x10" value="&lt;b&gt;x10 WT 晶圆台温控与 WHFF 前馈边界&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;高剂量首末场漂移 ≤ 5 mK; WT 表面均匀性 ≤ 6 mK PV; α_Si = 2.6 ppm/K&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="709" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x11" value="&lt;b&gt;x11 WH 传片模块出口温控重复性&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;WH 出口片间温差 ≤ 6 mK; 经热衰减后 M→E 残余等效温差 ≤ 0.62 mK&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="775" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x12" value="&lt;b&gt;x12 浸没供液水温、流场与残液控制 ★共享源&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;UPW 水温 ±2.5 mK (Ref021); 喷嘴流场/气帘控蒸发与压力脉动&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="841" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x13" value="&lt;b&gt;x13 掩模热控、RTS 测温与 RHC 模型&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;RHC 补偿后掩模等效温升 ≤ 38 mK (熔石英 α = 0.52 ppm/K, 0.009 nm/mK)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="907" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x14" value="&lt;b&gt;x14 掩模–物镜气隙气流温控&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;气隙光路温度梯度波动 ≤ 12 mK (空气折射率灵敏度 ~0.025 nm/mK)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="973" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x15" value="&lt;b&gt;x15 RT 掩模夹持力学接口 (4× 掩模侧)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;重复装夹形变 ≤ 0.74 nm、150 m/s² 折返微滑移 ≤ 0.74 nm (晶圆等效各 0.185 nm)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="1039" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x16" value="&lt;b&gt;x16 WT 晶圆夹持与 WT–MB 接口 ★共享源&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;重夹 IPD ≤ 0.34 nm; 折返微滑移 ≤ 0.22 nm; 瘤点平坦度 ≤ 6.5 nm (50 μm 翘曲)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="1105" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x17" value="&lt;b&gt;x17 双台卡盘网格标定与参考基准 ★共享源&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;A/B 卡盘相对网格与 TIS 标定差 ≤ 0.48 nm; 跨机多移位标定片 ≤ 2.0 nm&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="1171" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="x18" value="&lt;b&gt;x18 外部套刻量测工具与工艺本底&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#334155&quot;&gt;同靶复测重复性 TMU (3σ) ≤ 0.30 nm; 未建模短时随机底噪 ≤ 0.16 nm&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;fontSize=11;fontColor=#0F172A;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="1237" width="770" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_0_L0_MMO_L0_MMO_M" value="+ 线性" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B45309;strokeWidth=2.0;endArrow=classic;endFill=1;fontSize=10;fontColor=#92400E;fontFamily=Microsoft YaHei;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="L0_MMO" target="L0_MMO_M">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_1_L0_MMO_M1" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="L0_MMO" target="M1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_2_L0_MMO_M2" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="L0_MMO" target="M2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_3_L0_MMO_M3" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="L0_MMO" target="M3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_4_L0_MMO_L0_SMO" value="RSS (含 SMO 随机底数 2.00 nm)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=0.15;exitY=1;entryX=0.15;entryY=0;" edge="1" parent="1" source="L0_MMO" target="L0_SMO">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_5_L0_SMO_L0_SMO_M" value="+ 线性" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B45309;strokeWidth=2.0;endArrow=classic;endFill=1;fontSize=10;fontColor=#92400E;fontFamily=Microsoft YaHei;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="L0_SMO" target="L0_SMO_M">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_6_L0_SMO_F1" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="L0_SMO" target="F1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_7_L0_SMO_F2" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="L0_SMO" target="F2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_8_L0_SMO_F3" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="L0_SMO" target="F3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_9_L0_SMO_F4" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="L0_SMO" target="F4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_10_L0_SMO_F5" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="L0_SMO" target="F5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_11_L0_SMO_F6" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="L0_SMO" target="F6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_12_L0_SMO_F7" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="L0_SMO" target="F7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_13_M1_m_l2_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="M1" target="m_l2_1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_14_M2_m_l2_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="M2" target="m_l2_2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_15_M3_m_l2_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="M3" target="m_l2_3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_16_F1_f1" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F1" target="f1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_17_F1_f2" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F1" target="f2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_18_F2_f3" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F2" target="f3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_19_F2_f4" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F2" target="f4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_20_F3_f5" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F3" target="f5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_21_F3_f6" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F3" target="f6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_22_F3_f7" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F3" target="f7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_23_F4_f8" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F4" target="f8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_24_F4_f9" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F4" target="f9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_25_F5_f10" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F5" target="f10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_26_F5_f11" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F5" target="f11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_27_F5_f12" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F5" target="f12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_28_F6_f13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F6" target="f13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_29_F7_f14" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F7" target="f14">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_30_F7_f15" value="RSS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="F7" target="f15">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_31_f1_x01" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f1" target="x01">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_32_f1_x02" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f1" target="x02">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_33_f1_x03" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f1" target="x03">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_34_f1_x04" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f1" target="x04">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_35_f2_x01" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f2" target="x01">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_36_f3_x05" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f3" target="x05">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_37_f4_x06" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f4" target="x06">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_38_f5_x07" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f5" target="x07">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_39_f6_x08" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f6" target="x08">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_40_f7_x09" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f7" target="x09">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_41_f8_x10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f8" target="x10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_42_f8_x11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f8" target="x11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_43_f8_x12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f8" target="x12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_44_f9_x12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f9" target="x12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_45_f10_x13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f10" target="x13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_46_f11_x14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f11" target="x14">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_47_f12_x15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f12" target="x15">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_48_f13_x16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f13" target="x16">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_49_f14_x17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f14" target="x17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_50_f15_x18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.4;endArrow=classic;endFill=1;fontSize=9;fontColor=#334155;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f15" target="x18">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_51_m_l2_1_x03" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="m_l2_1" target="x03">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_52_m_l2_1_x17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="m_l2_1" target="x17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_53_m_l2_2_x07" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="m_l2_2" target="x07">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_54_m_l2_2_x08" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="m_l2_2" target="x08">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_55_m_l2_3_x16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="m_l2_3" target="x16">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_56_m_l2_3_x17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="m_l2_3" target="x17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_57_f3_x03" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f3" target="x03">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_58_f3_x04" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f3" target="x04">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_59_f3_x01" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f3" target="x01">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_60_f4_x02" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f4" target="x02">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_61_f4_x03" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f4" target="x03">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_62_f4_x04" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f4" target="x04">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_63_f4_x12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f4" target="x12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_64_f7_x06" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f7" target="x06">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_65_f14_x06" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EA580C;strokeWidth=1.1;dashed=1;dashPattern=5 4;opacity=75;endArrow=open;endFill=0;fontSize=9;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="f14" target="x06">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="t17" value="&lt;b&gt;误差逐层传递数学架构与图例说明：&lt;/b&gt;　L3 原生底层参数 x = (x₁, x₂, …, x₁₈)　→　L2 中间执行层 y_j = f_j(x; p_j)（含对准/扫描/热/校正配方 p）　→　L1 功能子系统预算 z_k = F_k(f, x; P_k)（按 Ref009 Fig.3 分域）　→　L0 整机套刻 = |Mean|（线性） + RSS(3σ 随机项)。&lt;br/&gt;&lt;b&gt;连线图例：&lt;/b&gt;　&lt;span style=&quot;color:#334155&quot;&gt;━━▶ 实线箭头&lt;/span&gt;：主预算分配 / 主传递路径（标 RSS 平方和开方）　｜　&lt;span style=&quot;color:#B45309&quot;&gt;━━▶ 粗棕箭头&lt;/span&gt;：系统均值偏置线性叠加（+ |Mean|）　｜　&lt;span style=&quot;color:#EA580C&quot;&gt;┄┄▷ 橙色虚线&lt;/span&gt;：跨分支共享物理源（如 ENC、MF、PARIS、浸没流场，类似 Ref146 Fig.3 虚线，整机汇总保留协方差、严禁重复计数）。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#94A3B8;strokeWidth=1.2;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;fontSize=11;fontColor=#1E293B;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1345" width="2190" height="96" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
