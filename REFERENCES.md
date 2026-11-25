@@ -1,6 +1,6 @@
 # OV4 参考文献完整清单总目（共 265 份本地原件 · 含新增 22 篇一手文献与专利）
 
-[仓库首页](README.md) · [成果索引](outputs/README.md) · [NXT:1965Ci L0–L3 拆解报告 v1](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md) · [WS-RS 同步调研报告 v2](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md) · [九大子系统说明书 v2](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [总报告 v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [仓库规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
+[仓库首页](README.md) · [成果索引](outputs/README.md) · [NXT:1965Ci 主报告 v1](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v1.md) · [WS-RS 同步调研报告 v2](outputs/reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md) · [九大子系统说明书 v2](outputs/reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [总报告 v2](outputs/reports/NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [仓库规范](REPOSITORY_MANAGEMENT.md) · [总变更记录](CHANGELOG.md)
 
 > **归档说明**：受版权与大体积限制，本机原始 PDF 与 MinerU Markdown 文献库（`参考文献-整理版/`、`参考文献-整理版-Markdown/`、`参考文献_新增/`）由 [.gitignore](.gitignore) 排除、仅保留于本机只读目录；本文件作为 **Git 跟踪的全库唯一书目总目**，完整记录全部 **265 份原件**（SHA-256 去重后 **264 份唯一文献**）的编号、文件名、标题、类型、页数、校验指纹及引用状态，便于在 GitHub 网页端检索与评审溯源。
 

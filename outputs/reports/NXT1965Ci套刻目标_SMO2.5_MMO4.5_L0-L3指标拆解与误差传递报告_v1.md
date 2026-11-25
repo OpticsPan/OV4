@@ -1,4 +1,6 @@
-# ASML NXT:1965Ci 套刻指标（SMO ≤ 2.50 nm / MMO ≤ 4.50 nm）L0–L3 全链路拆解与误差传递方法论报告（v1）
+# ASML NXT:1965Ci 套刻指标（SMO ≤ 2.50 nm / MMO ≤ 4.50 nm）L0–L3 全链路拆解与误差传递方法论报告（v1 · 已归档冻结）
+
+> **【已归档冻结 · 不再作为后续参考（[UP-012](../../USER_PREFERENCES.md#up-012)）】**：本文件及同名 `NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.drawio/.png` 与脚本 `build_nxt1965ci_l0_l3_diagram_v1.py` 源于 2026-11-25 的纠偏前指令（曾参考 `@github/Overlay3` 其他报告文档），现依据仓库管理规定完整保留作历史留档，**后续无用户特殊指令严禁再以本组文件作为参考或推导输入**。请改用正式锚定版：**[NXT:1965Ci 整机 L0–L3 拆解与九大子系统验收规格报告 v1](NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v1.md)** · **[Ref-146 风格 draw.io 源图](../images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.drawio)** · **[NXT:1965Ci 汇报 PPTX v1](../presentations/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与子系统验收规格_v1.pptx)**。
 
 [仓库首页](../../README.md) · [成果索引](../README.md) · [可编辑 draw.io 拆解图](../images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.drawio) · [高清全景图 PNG](../images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.png) · [绘图复现脚本](../code/build_nxt1965ci_l0_l3_diagram_v1.py) · [紧缩基线总报告 v2](NXT1950i-1970i套刻目标_整机及子系统验收规格推导报告_v2.md) · [九大子系统说明书 v2](NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [总变更记录](../../CHANGELOG.md)
 

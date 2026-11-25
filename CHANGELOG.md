@@ -6,6 +6,20 @@
 
 ---
 
+<a name="2026-11-25-nxt1965ci-clean-ref143"></a>
+
+## 2026-11-25　冻结纠偏前 v1（UP-012），基于九大子系统说明书 v2 + Overlay3 报告 143 + 一手文献独立重建 NXT:1965Ci 主报告、Ref-146 风格 draw.io 与 18 页全新 PPTX
+
+- **详细变更日志**：[2026-11-25-nxt1965ci-clean-ref143-budget-and-pptx_v1.md](changes/2026-11-25-nxt1965ci-clean-ref143-budget-and-pptx_v1.md)
+- **治理与冻结**：新增 [UP-012](USER_PREFERENCES.md#up-012) 与 [AGENTS.md](AGENTS.md) 禁引红线，完整保留纠偏前 `v1` 报告/图件/脚本但正式标记为**【已归档冻结·不再作为后续参考】**。
+- **正式交付入口（严格仅参考 OV4 v2 说明书 + Overlay3 报告 143 + 原始一手文献 Ref146/009/066/165/167/168）**：
+  - [ASML TWINSCAN NXT:1965Ci（SMO 2.50 / MMO 4.50 nm）整机 L0–L3 拆解与九大子系统验收规格报告 v1 MD](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v1.md)
+  - [Ref-146 Fig. 3 风格可编辑 draw.io 源图](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.drawio) · [180 DPI 高清 PNG](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.png) · [单一事实源脚本](outputs/code/build_nxt1965ci_budget_and_diagram_v1.py)
+  - [ASML NXT:1965Ci 18 页全新汇报演示文稿 PPTX v1](outputs/presentations/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与子系统验收规格_v1.pptx) · [PPTX 构建脚本](outputs/code/build_nxt1965ci_pptx_v1.py)
+- **核验要点**：`Ref009 Fig. 3` 六大域方差占比全项误差 `≤ ±0.30%`，双轴闭环同卡盘 `DCO = 2.26` / 双卡盘 `SMO = 2.36 ≤ 2.50 nm` / `MMO = 4.29 ≤ 4.50 nm` / `FU = 11.48 ≤ 14.0 nm`；全部 18 页 PPTX 经 PowerPoint COM 导出 PNG 逐页视觉核检通过；全仓经 `audit_github_md_v1.py` 链接与公式双项 `Errors: 0`。
+
+---
+
 <a name="2026-11-25-nxt1965ci-l0-l3-and-xt-sync"></a>
 
 ## 2026-11-25　修订默认 `.md` 规范（UP-011）、新增 NXT:1965Ci（SMO 2.5 / MMO 4.5）L0–L3 拆解报告与 draw.io 源图、升级 WS–RS 同步报告 v2（含 XT i-line/KrF 专题与 `[S14]` 专利）

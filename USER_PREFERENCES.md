@@ -106,3 +106,18 @@
   1. 凡任务中未明确要求 PDF、Excel（`.xlsx`）、PPTX（`.pptx`）或 Word（`.docx`）格式的调研/分析/技术报告，一律**默认仅交付 Markdown（`.md`）格式**（归档至 `outputs/reports/`，附规范版本号 `_vN.md`）；
   2. 若任务中另行明确指定附加交付物（例如 `.drawio` 架构图、`.png` 高清图、`.xlsx` 或 `.pdf`），则仅生成用户明确指定的附加文件，不冗余生成未要求的 PDF/PPTX；
   3. 所有默认交付的 `.md` 报告仍须 100% 遵守 [UP-006](#up-006)（导航、锚点、相对路径）与 [UP-010](#up-010)（GitHub 网页 GFM + MathJax 公式渲染），并通过 `python outputs/code/audit_github_md_v1.py` 0 错门禁。
+
+<a name="up-012"></a>
+
+### UP-012：纠偏前错误指令产物归档冻结与禁引规则
+
+- **用户原意**（2026-11-25）：因此前指令“参考 Overlay3 报告 146”有误（正确指令为仅参考 `@github/Overlay3` 报告 `reports/md/143_scanner_overlay_control_survey.md` 及原始一手文献，不可参考该仓其他报告文档），明确要求——**纠偏前产物保留在仓库中，但后续没有特殊指令不再以该组错误指令产物作为参考**。
+- **冻结归档文件清单（仅留档、禁止后续引用或在其上派生）**：
+  - `outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与误差传递报告_v1.md`
+  - `outputs/images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.drawio`
+  - `outputs/images/NXT1965Ci_SMO2.5_MMO4.5_L0-L3套刻指标拆解图_v1.png`
+  - `outputs/code/build_nxt1965ci_l0_l3_diagram_v1.py`
+- **正式替代入口（当前唯一 `NXT:1965Ci` 权威参考基线）**：
+  - [NXT:1965Ci 整机 L0–L3 拆解与九大子系统验收规格报告 v1](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v1.md)
+  - [Ref-146 风格 L0–L3 draw.io 源图](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.drawio) · [180 DPI PNG](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.png)
+  - [NXT:1965Ci 18 页汇报 PPTX v1](outputs/presentations/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与子系统验收规格_v1.pptx)
