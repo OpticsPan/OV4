@@ -4,7 +4,9 @@
 
 本页按成果类型与技术专题集中索引 `D:\work\OV4`（对应 GitHub `OpticsPan/OV4`）已归档的全部正式交付物。
 
-**最新更新 · 2026-11-26**　依据原始论文、专利与原厂资料重建 NXT-1965Ci 套刻预算，明确专用卡盘和参考晶圆匹配的验证条件，逐项定义 T1 部件、T2 装机动作和 T3 整机验收。 [正式报告](reports/NXT-1965Ci套刻指标拆解报告_v1.md) · [变更日志](../changes/2026-11-26-nxt1965ci-overlay-primary-source-report_v1.md)
+**最新更新 · 2026-11-26**　全面重审并发布 **[NXT:1965Ci 整机 L0–L3 拆解与九大核心子系统分级验收规格报告 v2](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md)**：彻底清除历史版本数据残留，建立 `T1 / T2a / T2b / T2联试 / T3 / T4` 显式分级验收体系，采用简洁无歧义指标命名与直白工程语言（保留 `v1` 存档）。 [v2 正式报告](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md) · [T1–T4 放行总卡](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md#sec-5-1) · [变更日志](../changes/2026-11-26-nxt1965ci-report-v2-clean-tiered-specs_v1.md)
+
+**此前更新 · 2026-11-26**　依据原始论文、专利与原厂资料重建 NXT-1965Ci 套刻预算，明确专用卡盘和参考晶圆匹配的验证条件，逐项定义 T1 部件、T2 装机动作和 T3 整机验收。 [正式报告](reports/NXT-1965Ci套刻指标拆解报告_v1.md) · [变更日志](../changes/2026-11-26-nxt1965ci-overlay-primary-source-report_v1.md)
 
 **此前更新 · 2026-11-26**　复核 ENC 计量链与闭环在位稳定性、AA 单标记及全片网格验收，给出 WS/RS 单程与往返试验定义和有条件放宽流程。 [专项报告](reports/ENC_AA_WS-RS重复性与分级验收专项答复_v1.md) · [变更日志](../changes/2026-11-26-enc-aa-stage-repeatability-acceptance_v1.md)
 
@@ -18,7 +20,7 @@
 | :--- | :--- |
 | **NXT-1965Ci 套刻指标拆解** | [正式报告 v1](reports/NXT-1965Ci套刻指标拆解报告_v1.md) · [本次变更](../changes/2026-11-26-nxt1965ci-overlay-primary-source-report_v1.md) |
 | **ENC、AA、WS/RS 重复性验收** | [专项答复 v1](reports/ENC_AA_WS-RS重复性与分级验收专项答复_v1.md) · [单程与往返示意](reports/ENC_AA_WS-RS重复性与分级验收专项答复_v1.md#sec-stage-1) |
-| **2026-11-25 NXT:1965Ci 整机拆解与子系统规格** | [NXT:1965Ci 整机 L0–L3 拆解与九大子系统验收规格报告 v1 MD](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v1.md) · [Ref-146 风格 draw.io 源图](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.drawio) · [180 DPI PNG](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.png) · [18 页全新 NXT:1965Ci PPTX v1](presentations/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与子系统验收规格_v1.pptx) |
+| **NXT:1965Ci 整机 L0–L3 拆解与九大子系统分级规格** | **【最新清爽分级版 v2】**[NXT:1965Ci 分级验收规格报告 v2 MD](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md)（零历史残留、`T1–T4` 显式分级、无歧义简洁命名、直白工程语言） · [T1–T4 放行总卡](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md#sec-5-1) · [Ref-146 风格 draw.io 源图](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.drawio) · [180 DPI PNG](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.png)<br>【历史存档 v1】[NXT:1965Ci 主报告 v1 MD](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v1.md) · [18 页 NXT:1965Ci PPTX v1](presentations/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与子系统验收规格_v1.pptx) |
 | **WS–RS 同步策略专项调研报告** | **【最新调研 v2】**[ArF/ArFi 及 ASML TWINSCAN XT（i-line/KrF）WS–RS 同步策略与单台重复性误差专项调研报告 v2 MD](reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md)（含 14 篇 USPTO 专利原件 `[S1–S14]` + `ME3` 官方手册实测 + 8 篇手动下载清单）<br>【历史调研 v1】[WS–RS 同步策略专项调研报告 v1 MD](reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md) |
 | **DCO 预算分配与验收图（2.00 nm 历史口径）** | [draw.io 源图](images/DCO_budget_v1.drawio) · [图册 PDF](images/DCO_budget_v1.pdf) · [总图 PNG](images/DCO_budget_v1.png) · [动态预算表](tables/DCO_budget_v1.xlsx) · [读图说明](reports/DCO_budget_notes_v1.md) |
 | **九大子系统推导与计算说明书（2.00/3.50 演进基线）** | **【历史演进基线 v2】**[九大核心子系统说明书 v2 MD（8 篇一手文献全核验）](reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) · [印刷排版版 v2 PDF（19 页 / 35 书签）](reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.pdf)<br>【历史专题 v1】[九大核心子系统说明书 v1 MD](reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.md) · [v1 PDF（19 页 / 34 书签）](reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v1.pdf) |

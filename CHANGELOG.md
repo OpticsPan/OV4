@@ -6,6 +6,18 @@
 
 ---
 
+<a name="2026-11-26-nxt1965ci-report-v2"></a>
+
+## 2026-11-26　发布 NXT:1965Ci 整机 L0–L3 拆解与九大核心子系统分级验收规格报告 v2（清爽无历史残留、T1–T4 显式分级、直白工程语言版）
+
+- **详细变更日志**：[2026-11-26-nxt1965ci-report-v2-clean-tiered-specs_v1.md](changes/2026-11-26-nxt1965ci-report-v2-clean-tiered-specs_v1.md)
+- **正式交付入口**：
+  - [ASML TWINSCAN NXT:1965Ci 整机 L0–L3 拆解与九大核心子系统分级验收规格报告 v2 MD](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md)（[5 分钟读懂术语与 T1–T4 分级](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md#sec-0) · [九大子系统分级规格](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md#sec-3) · [一页 T1–T4 放行总卡](outputs/reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md#sec-5-1)）
+  - 配套图件沿用清爽版 [Ref-146 Fig. 3 风格 draw.io](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.drawio) 与 [全景 PNG](outputs/images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.png)；原 `v1` 报告按 `UP-008` 完整保留存档。
+- **核心改进与核验**：彻底清零历史版本（`2.00/3.50 nm`、`旧 v2`、旧狭缝）数据残留；建立清晰的 `T1 / T2a / T2b / T2联试 / T3 / T4` 分级验收体系与简洁无歧义指标命名（ENC 测量链与 WS/RS 台体稳度彻底解耦）；全文改写为直白工程语言并补齐单程/往返图示与物镜 8 维直白体检清单；全仓经 `audit_github_md_v1.py` 核验双项 `Errors: 0`。
+
+---
+
 <a name="2026-11-26-nxt1965ci-overlay-primary-source"></a>
 
 ## 2026-11-26　NXT-1965Ci 套刻指标拆解报告
