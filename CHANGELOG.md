@@ -6,6 +6,18 @@
 
 ---
 
+<a name="2026-11-26-nxt1965ci-six-subsys-spec-pdf"></a>
+
+## 2026-11-26　发布 ASML NXT:1965Ci 六大核心子系统套刻预算分配与分层验收规格需求书（PDF v1，宋体小五 / Times New Roman）
+
+- **详细变更日志**：[2026-11-26-nxt1965ci-six-subsys-spec-pdf_v1.md](changes/2026-11-26-nxt1965ci-six-subsys-spec-pdf_v1.md)
+- **正式交付入口**：
+  - [ASML NXT:1965Ci 六大核心子系统套刻预算分配与分层验收规格需求书 v1 PDF](outputs/reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v1.pdf)（22 页 / 27 书签 / 6 张 300 DPI 工程图）
+  - [可复现 PDF 构建脚本](outputs/code/build_nxt1965ci_subsys_spec_pdf_v1.py)
+- **核心亮点与核验**：针对 **WS（含自身与 WRS 同步及 11 项 iHOPC 运动补偿）、RS、ENC、AA、TIS+PARIS（单设 T1）、Lens（193 nm Odd Zernike 全 30 项 Fringe 系数 nm + Lens-iHOPC 8 项范围/精度与 K20 边界）** 六大子系统独立成章，全部 12 张验收表采用严格四列（序号/指标项/验收规格/标准测试定义与工装条件）与 **213 项逐项单列零合并**；正文字体经 PyMuPDF 实测锁定 `SimSun 9.0 pt`（宋体小五）+ `Times New Roman 9.0 pt`，全册视觉复核无遮挡无断行；全仓经 `audit_github_md_v1.py` 核验 `Errors: 0`。
+
+---
+
 <a name="2026-11-26-nxt1965ci-report-v2"></a>
 
 ## 2026-11-26　发布 NXT:1965Ci 整机 L0–L3 拆解与九大核心子系统分级验收规格报告 v2（清爽无历史残留、T1–T4 显式分级、直白工程语言版）
