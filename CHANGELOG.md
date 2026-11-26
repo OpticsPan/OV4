@@ -6,6 +6,18 @@
 
 ---
 
+<a name="2026-11-26-nxt1965ci-six-subsys-spec-pdf-v3"></a>
+
+## 2026-11-26　发布 ASML NXT:1965Ci 六大核心子系统套刻预算规格需求书（专项审定版 PDF v3）
+
+- **详细变更日志**：[2026-11-26-nxt1965ci-six-subsys-spec-pdf-v3_v1.md](changes/2026-11-26-nxt1965ci-six-subsys-spec-pdf-v3_v1.md)
+- **正式交付入口**：
+  - [ASML NXT:1965Ci 六大核心子系统套刻预算规格需求书 v3 PDF](outputs/reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v3.pdf)（17 页 / 24 书签 / 12 张一手论文原图，宋体小五 `9 pt` + `Times New Roman 9 pt`）
+  - [可复现 PDF 构建脚本 v3](outputs/code/build_nxt1965ci_subsys_spec_pdf_v3.py)（原 `v1.pdf` 与 `v2.pdf` 按 `UP-008` 完整保留存档）
+- **核心修订与核验**：① 核证 `[注 4]` 运动 iHOPC 一手文献，剔除无文献依据的“因浸没水膜将动态 K 项交由 RS 单独执行”推理，改据 `Ref154 Table 1`、`Ref019 §V.B`、`Ref225` 与 `US 8,237,914 B2` 明确 WS/RS 相对扫描轨迹协同执行且不绑死内部分配；② 升级离线干态单台验收逻辑，新增 `WS-T1B`（表 1.2，11 项，55%）与 `RS-T1B`（表 2.2，11 项，4× 口径，45%）独立合成多项式轨迹测试，与 T2 耦合（70%）精确 RSS 闭合；③ `Lens-iHOPC` 拆分为表 6.3（Range 量程，9 项）与表 6.4（精度与套刻动态，17 项）；④ `[注 12]` 增补 `Streefkerk et al. (SPIE 5377)` wet PMI 及 Carl Zeiss SMT 专利族（`US 7,408,652` / `8,836,929` / `8,908,269` / `7,796,274` / `8,488,127` / `8,823,948` / `7,310,187`）并诚实界定 `Dry NA=0.93 + Wet NA=1.35` 属未公开工厂细节；⑤ `[注 1]`–`[注 14]` 全部补齐编号引文 `[1]`–`[26]` 并核正参考文献作者/卷期/DOI。
+
+---
+
 <a name="2026-11-26-nxt1965ci-six-subsys-spec-pdf-v2"></a>
 
 ## 2026-11-26　发布 ASML NXT:1965Ci 六大核心子系统套刻预算规格需求书（模板对齐修订版 PDF v2）
