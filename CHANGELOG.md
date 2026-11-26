@@ -6,6 +6,14 @@
 
 ---
 
+<a name="2026-11-26-enc-aa-stage-repeatability"></a>
+
+## 2026-11-26　ENC、AA 与 WS/RS 重复性及分级验收专项答复
+
+复核 ENC 计量链与闭环在位稳定性、AA 单标记及全片网格验收，给出 WS/RS 单程与往返试验定义和有条件放宽流程。 [专项报告 Markdown](outputs/reports/ENC_AA_WS-RS重复性与分级验收专项答复_v1.md) · [变更日志](changes/2026-11-26-enc-aa-stage-repeatability-acceptance_v1.md)
+
+---
+
 <a name="2026-11-25-nxt1965ci-clean-ref143"></a>
 
 ## 2026-11-25　冻结纠偏前 v1（UP-012），基于九大子系统说明书 v2 + Overlay3 报告 143 + 一手文献独立重建 NXT:1965Ci 主报告、Ref-146 风格 draw.io 与 18 页全新 PPTX

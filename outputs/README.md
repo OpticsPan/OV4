@@ -4,7 +4,9 @@
 
 本页按成果类型与技术专题集中索引 `D:\work\OV4`（对应 GitHub `OpticsPan/OV4`）已归档的全部正式交付物。
 
-**最新更新 · 2026-11-25**　新增 **[UP-012] 冻结归档纠偏前 v1 产物**；严格从 [九大核心子系统说明书 v2](reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) + `@github/Overlay3` 报告 `143` + 原始一手文献（`Ref146/009/066/165/167/168`）独立重建 **[NXT:1965Ci（SMO 2.50 / MMO 4.50 nm）整机 L0–L3 拆解与九大子系统验收规格报告 v1](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v1.md)**、**[Ref-146 风格 draw.io 源图](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.drawio)** / **[PNG](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.png)** 与 **[18 页全新 NXT:1965Ci 汇报 PPTX v1](presentations/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与子系统验收规格_v1.pptx)**。[本次变更日志](../changes/2026-11-25-nxt1965ci-clean-ref143-budget-and-pptx_v1.md)
+**最新更新 · 2026-11-26**　复核 ENC 计量链与闭环在位稳定性、AA 单标记及全片网格验收，给出 WS/RS 单程与往返试验定义和有条件放宽流程。 [专项报告](reports/ENC_AA_WS-RS重复性与分级验收专项答复_v1.md) · [变更日志](../changes/2026-11-26-enc-aa-stage-repeatability-acceptance_v1.md)
+
+**此前更新 · 2026-11-25**　新增 **[UP-012] 冻结归档纠偏前 v1 产物**；严格从 [九大核心子系统说明书 v2](reports/NXT1950i-1970i套刻目标_九大核心子系统验收指标推导与计算说明书_v2.md) + `@github/Overlay3` 报告 `143` + 原始一手文献（`Ref146/009/066/165/167/168`）独立重建 **[NXT:1965Ci（SMO 2.50 / MMO 4.50 nm）整机 L0–L3 拆解与九大子系统验收规格报告 v1](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v1.md)**、**[Ref-146 风格 draw.io 源图](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.drawio)** / **[PNG](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.png)** 与 **[18 页全新 NXT:1965Ci 汇报 PPTX v1](presentations/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与子系统验收规格_v1.pptx)**。[本次变更日志](../changes/2026-11-25-nxt1965ci-clean-ref143-budget-and-pptx_v1.md)
 
 **此前更新 · 2026-11-25**　新增 **[UP-011] 默认 `.md` 格式**；将 WS–RS 同步报告升级至 **[v2（新增 ASML TWINSCAN XT i-line / KrF 专题与 `[S14]` `US 6,373,072 B1` 奠基专利）](reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md)**，并发布 **[UP-010] GitHub 网页版公式规范** 与 [audit_github_md_v1.py](code/audit_github_md_v1.py)。
 
@@ -12,6 +14,7 @@
 
 | 类型 | 已归档正式成果 |
 | :--- | :--- |
+| **ENC、AA、WS/RS 重复性验收** | [专项答复 v1](reports/ENC_AA_WS-RS重复性与分级验收专项答复_v1.md) · [单程与往返示意](reports/ENC_AA_WS-RS重复性与分级验收专项答复_v1.md#sec-stage-1) |
 | **NXT:1965Ci 整机拆解与子系统规格（最新正式主入口）** | **【当前主入口】**[NXT:1965Ci 整机 L0–L3 拆解与九大子系统验收规格报告 v1 MD](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v1.md) · [Ref-146 风格 draw.io 源图](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.drawio) · [180 DPI PNG](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.png) · [18 页全新 NXT:1965Ci PPTX v1](presentations/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与子系统验收规格_v1.pptx) |
 | **WS–RS 同步策略专项调研报告** | **【最新调研 v2】**[ArF/ArFi 及 ASML TWINSCAN XT（i-line/KrF）WS–RS 同步策略与单台重复性误差专项调研报告 v2 MD](reports/WS-RS同步策略与单台重复性误差专项调研报告_v2.md)（含 14 篇 USPTO 专利原件 `[S1–S14]` + `ME3` 官方手册实测 + 8 篇手动下载清单）<br>【历史调研 v1】[WS–RS 同步策略专项调研报告 v1 MD](reports/WS-RS同步策略与单台重复性误差专项调研报告_v1.md) |
 | **DCO 预算分配与验收图（2.00 nm 历史口径）** | [draw.io 源图](images/DCO_budget_v1.drawio) · [图册 PDF](images/DCO_budget_v1.pdf) · [总图 PNG](images/DCO_budget_v1.png) · [动态预算表](tables/DCO_budget_v1.xlsx) · [读图说明](reports/DCO_budget_notes_v1.md) |
