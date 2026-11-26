@@ -6,6 +6,14 @@
 
 ---
 
+<a name="2026-11-26-nxt1965ci-overlay-primary-source"></a>
+
+## 2026-11-26　NXT-1965Ci 套刻指标拆解报告
+
+依据原始论文、专利与原厂资料重建 NXT-1965Ci 套刻预算，明确专用卡盘和参考晶圆匹配的验证条件，逐项定义 T1 部件、T2 装机动作和 T3 整机验收。 [套刻指标拆解报告](outputs/reports/NXT-1965Ci套刻指标拆解报告_v1.md) · [变更日志](changes/2026-11-26-nxt1965ci-overlay-primary-source-report_v1.md)
+
+---
+
 <a name="2026-11-26-enc-aa-stage-repeatability"></a>
 
 ## 2026-11-26　ENC、AA 与 WS/RS 重复性及分级验收专项答复
