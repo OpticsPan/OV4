@@ -4,7 +4,9 @@
 
 本页按成果类型与技术专题集中索引 `D:\work\OV4`（对应 GitHub `OpticsPan/OV4`）已归档的全部正式交付物。
 
-**最新更新 · 2026-11-26**　发布印刷级 **[ASML NXT:1965Ci 六大核心子系统套刻预算分配与分层验收规格需求书 PDF v1](reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v1.pdf)**（22 页 / 27 书签，正文宋体小五 + Times New Roman）：覆盖 WS（含 WRS 同步与 11 项 iHOPC 运动补偿）、RS、ENC、AA、TIS+PARIS（单设 T1）、Lens（193 nm Odd Zernike 全 30 项 + iHOPC 8 项范围与精度），12 张标准四列表共 **213 项严格逐项单列**。 [规格需求书 PDF v1](reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v1.pdf) · [构建脚本](code/build_nxt1965ci_subsys_spec_pdf_v1.py) · [变更日志](../changes/2026-11-26-nxt1965ci-six-subsys-spec-pdf_v1.md)
+**最新更新 · 2026-11-26**　按工程 SRS 模板重编并发布 **[ASML NXT:1965Ci 六大核心子系统套刻预算规格需求书 PDF v2](reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v2.pdf)**（16 页 / 21 书签 / 12 张一手论文原图，宋体小五 + Times New Roman）：严格聚焦套刻（删 MSD 与纯焦面项）、明确干/湿 T1 边界、解除内部算法限定、补齐 A–B 距离与完整公式、拆分 WRS-T2 双表并去运动 Range、物镜简化 `Z7–Z63` 并设静态上限 + `LensModel` 调节残差两层（保留 `v1.pdf` 存档）。 [规格需求书 PDF v2](reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v2.pdf) · [构建脚本 v2](code/build_nxt1965ci_subsys_spec_pdf_v2.py) · [变更日志](../changes/2026-11-26-nxt1965ci-six-subsys-spec-pdf-v2_v1.md)
+
+**此前更新 · 2026-11-26**　发布印刷级 **[ASML NXT:1965Ci 六大核心子系统套刻预算分配与分层验收规格需求书 PDF v1](reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v1.pdf)**（22 页 / 27 书签，正文宋体小五 + Times New Roman）。 [规格需求书 PDF v1](reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v1.pdf) · [构建脚本 v1](code/build_nxt1965ci_subsys_spec_pdf_v1.py) · [变更日志](../changes/2026-11-26-nxt1965ci-six-subsys-spec-pdf_v1.md)
 
 **此前更新 · 2026-11-26**　全面重审并发布 **[NXT:1965Ci 整机 L0–L3 拆解与九大核心子系统分级验收规格报告 v2](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md)**：彻底清除历史版本数据残留，建立 `T1 / T2a / T2b / T2联试 / T3 / T4` 显式分级验收体系，采用简洁无歧义指标命名与直白工程语言（保留 `v1` 存档）。 [v2 正式报告](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md) · [T1–T4 放行总卡](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md#sec-5-1) · [变更日志](../changes/2026-11-26-nxt1965ci-report-v2-clean-tiered-specs_v1.md)
 
@@ -20,7 +22,7 @@
 
 | 类型 | 已归档正式成果 |
 | :--- | :--- |
-| **六大核心子系统分层验收规格需求书（PDF v1）** | **【最新印刷版 PDF】**[NXT:1965Ci 六大核心子系统分层验收规格需求书 v1 PDF](reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v1.pdf)（22 页 / 27 书签，宋体小五 + Times New Roman，213 项零合并逐项单列四列表） · [构建脚本](code/build_nxt1965ci_subsys_spec_pdf_v1.py) |
+| **六大核心子系统分层验收规格需求书（PDF）** | **【最新模板对齐版 v2】**[NXT:1965Ci 六大核心子系统套刻预算规格需求书 v2 PDF](reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v2.pdf)（16 页 / 21 书签 / 12 张一手论文原图，宋体小五 + Times New Roman，纯套刻口径、零算法绑死、两层 Zernike） · [构建脚本 v2](code/build_nxt1965ci_subsys_spec_pdf_v2.py)<br>【历史存档 v1】[六大子系统分层规格需求书 v1 PDF](reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v1.pdf) · [构建脚本 v1](code/build_nxt1965ci_subsys_spec_pdf_v1.py) |
 | **NXT-1965Ci 套刻指标拆解** | [正式报告 v1](reports/NXT-1965Ci套刻指标拆解报告_v1.md) · [本次变更](../changes/2026-11-26-nxt1965ci-overlay-primary-source-report_v1.md) |
 | **ENC、AA、WS/RS 重复性验收** | [专项答复 v1](reports/ENC_AA_WS-RS重复性与分级验收专项答复_v1.md) · [单程与往返示意](reports/ENC_AA_WS-RS重复性与分级验收专项答复_v1.md#sec-stage-1) |
 | **NXT:1965Ci 整机 L0–L3 拆解与九大子系统分级规格** | **【最新清爽分级版 v2】**[NXT:1965Ci 分级验收规格报告 v2 MD](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md)（零历史残留、`T1–T4` 显式分级、无歧义简洁命名、直白工程语言） · [T1–T4 放行总卡](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v2.md#sec-5-1) · [Ref-146 风格 draw.io 源图](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.drawio) · [180 DPI PNG](images/NXT1965Ci_SMO2.5_MMO4.5_Ref146风格L0-L3套刻指标拆解图_v1.png)<br>【历史存档 v1】[NXT:1965Ci 主报告 v1 MD](reports/NXT1965Ci套刻目标_SMO2.5_MMO4.5_整机L0-L3拆解与九大子系统验收规格报告_v1.md) · [18 页 NXT:1965Ci PPTX v1](presentations/NXT1965Ci套刻目标_SMO2.5_MMO4.5_L0-L3指标拆解与子系统验收规格_v1.pptx) |

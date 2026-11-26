@@ -6,6 +6,18 @@
 
 ---
 
+<a name="2026-11-26-nxt1965ci-six-subsys-spec-pdf-v2"></a>
+
+## 2026-11-26　发布 ASML NXT:1965Ci 六大核心子系统套刻预算规格需求书（模板对齐修订版 PDF v2）
+
+- **详细变更日志**：[2026-11-26-nxt1965ci-six-subsys-spec-pdf-v2_v1.md](changes/2026-11-26-nxt1965ci-six-subsys-spec-pdf-v2_v1.md)
+- **正式交付入口**：
+  - [ASML NXT:1965Ci 六大核心子系统套刻预算规格需求书 v2 PDF](outputs/reports/NXT1965Ci套刻预算分配_六大核心子系统分层验收规格需求书_v2.pdf)（16 页 / 21 书签 / 12 张一手论文原图，宋体小五 `9 pt` + `Times New Roman 9 pt`）
+  - [可复现 PDF 构建脚本 v2](outputs/code/build_nxt1965ci_subsys_spec_pdf_v2.py)（原 `v1.pdf` 按 `UP-008` 完整保留存档）
+- **核心修订与核验**：复刻简约工程 SRS 模板、彻底去 AI 化；全部指标切换至 `NXT:1965Ci` 并嵌入 12 张一手论文原图（`Ref009 Fig. 3/4/10`、`Ref022`、`Ref075`、`Ref062`、`Ref015`、`Ref252`、`Ref066`、`Ref100`、`Ref024`、`Ref253`）；补齐 WS/RS A–B 扫描距离（`38.5 / 154.0 mm`）与完整三步公式；剥离 `MSD` 与纯焦面项（`Z/Rx/Ry`、`TIS-Z`、`PARIS-Z`）；纠正离线干态工装并解答物镜 T1 静态局部水浸没机理；去除内部算法限定；WS-T2 拆分双表、明确 WS/RS 执行分工并取消运动 iHOPC Range；Lens 奇像差简化为 `Z7`–`Z63` 并设 T1 静态上限 + T2-A `LensModel` 调节残差两层。
+
+---
+
 <a name="2026-11-26-nxt1965ci-six-subsys-spec-pdf"></a>
 
 ## 2026-11-26　发布 ASML NXT:1965Ci 六大核心子系统套刻预算分配与分层验收规格需求书（PDF v1，宋体小五 / Times New Roman）
