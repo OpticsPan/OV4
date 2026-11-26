@@ -6,6 +6,19 @@
 
 ---
 
+<a name="2026-11-27-nxt1965ci-six-subsys-spec-docx-suite"></a>
+
+## 2026-11-27　发布 ASML NXT:1965Ci 六大核心子系统套刻预算规格需求书 Word 套册（1 份整机总册 + 6 份子系统独立下发分册，v1）
+
+- **详细变更日志**：[2026-11-27-nxt1965ci-six-subsys-spec-docx-suite_v1.md](changes/2026-11-27-nxt1965ci-six-subsys-spec-docx-suite_v1.md)
+- **正式交付入口（7 份 `.docx`，正文宋体小五 `9 pt` + `Times New Roman 9 pt`）**：
+  - **整机自查总册（23 页，动态目录与页码）**：[00_整机总册_NXT1965Ci六大核心子系统套刻预算规格需求书_v1.docx](outputs/reports/NXT1965Ci六大子系统套刻规格需求书_Word_v1/00_整机总册_NXT1965Ci六大核心子系统套刻预算规格需求书_v1.docx)
+  - **6 份独立下发子系统分册**：[01 WS 晶圆台](outputs/reports/NXT1965Ci六大子系统套刻规格需求书_Word_v1/01_WS晶圆台_套刻预算规格需求书_v1.docx) · [02 RS 掩模台](outputs/reports/NXT1965Ci六大子系统套刻规格需求书_Word_v1/02_RS掩模台_套刻预算规格需求书_v1.docx) · [03 ENC 光栅编码器](outputs/reports/NXT1965Ci六大子系统套刻规格需求书_Word_v1/03_ENC光栅编码器_套刻预算规格需求书_v1.docx) · [04 AA 晶圆对准](outputs/reports/NXT1965Ci六大子系统套刻规格需求书_Word_v1/04_AA晶圆对准_套刻预算规格需求书_v1.docx) · [05 TIS+PARIS 空间像传感](outputs/reports/NXT1965Ci六大子系统套刻规格需求书_Word_v1/05_TIS与PARIS空间像传感_套刻预算规格需求书_v1.docx) · [06 Lens 投影物镜](outputs/reports/NXT1965Ci六大子系统套刻规格需求书_Word_v1/06_Lens投影物镜_套刻预算规格需求书_v1.docx)
+  - [可复现 Word 套册构建脚本 v1](outputs/code/build_nxt1965ci_subsys_spec_docx_v1.py)
+- **核心新增与核验**：文首新增《总则：多阶段验收理念与模块-整机耦合边界》（阐述模块间耦合、子系统–整机环境耦合及离线合格≠整机满足曝光需求的分级放行逻辑，总册附分级总表与分发清单，6 份分册附专属耦合清单 `CP-01..03`）；全 7 份文档与 `v3.pdf` 100% 数值同源，6 份分册零悬空跨章引用并自动重排专属参考文献，经本机 Word COM 刷新动态目录/页码与 PyMuPDF 字体/公式/视觉全检通过。
+
+---
+
 <a name="2026-11-26-nxt1965ci-six-subsys-spec-pdf-v3"></a>
 
 ## 2026-11-26　发布 ASML NXT:1965Ci 六大核心子系统套刻预算规格需求书（专项审定版 PDF v3）
