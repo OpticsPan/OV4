@@ -6,6 +6,20 @@
 
 ---
 
+<a name="2026-11-27-nxt1965ci-complete-12subsys-srs-and-calc-report"></a>
+
+## 2026-11-27　发布《ASML NXT:1965Ci 套刻预算规格需求书（十二大子系统完整版）》PDF/Word 套册与独立配套《指标规格分配计算报告》及归档计算代码（v1）
+
+- **详细变更日志**：[2026-11-27-nxt1965ci-complete-12subsys-srs-and-calc-report_v1.md](changes/2026-11-27-nxt1965ci-complete-12subsys-srs-and-calc-report_v1.md)
+- **正式交付入口（全套均锁定正文宋体小五 `9 pt` + `Times New Roman 9 pt`）**：
+  - **完整版 12 子系统规格需求书 PDF（31 页 / 53 书签 / 232 项独立指标 / 17 张原图）**：[ASML_NXT1965Ci套刻预算规格需求书_完整版_v1.pdf](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_v1.pdf)
+  - **完整版 Word 套册（1 份整机总册 + 12 份自包含独立下发分册）**：[00 整机总册](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/00_整机总册_ASML_NXT1965Ci套刻预算规格需求书_v1.docx) · [01 WS](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/01_WS晶圆台_套刻预算规格需求书_v1.docx) · [02 RS](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/02_RS掩模台_套刻预算规格需求书_v1.docx) · [03 ENC](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/03_ENC光栅编码器_套刻预算规格需求书_v1.docx) · [04 AA](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/04_AA晶圆对准_套刻预算规格需求书_v1.docx) · [05 TIS+PARIS](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/05_TIS与PARIS空间像传感_套刻预算规格需求书_v1.docx) · [06 Lens](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/06_Lens投影物镜_套刻预算规格需求书_v1.docx) · [07 IH](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/07_IH浸没液控系统_套刻预算规格需求书_v1.docx) · [08 WT-TC/WH](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/08_WT-TC与WH晶圆温控传片_套刻预算规格需求书_v1.docx) · [09 WC](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/09_WC晶圆夹持系统_套刻预算规格需求书_v1.docx) · [10 RC/RH](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/10_RC与RH掩模夹持及热控_套刻预算规格需求书_v1.docx) · [11 IL/LS](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/11_IL与LS光源及FlexRay照明_套刻预算规格需求书_v1.docx) · [12 MF/ENV](outputs/reports/ASML_NXT1965Ci套刻预算规格需求书_完整版_Word套册_v1/12_MF与ENV计量框架及微环境_套刻预算规格需求书_v1.docx)
+  - **独立内部计算报告 PDF（10 页 / 19 书签 / 5 图）**：[ASML_NXT1965Ci指标规格分配计算报告_v1.pdf](outputs/reports/ASML_NXT1965Ci指标规格分配计算报告_v1.pdf)
+  - **可复现归档代码（4 份）**：[主预算与蒙特卡洛引擎](outputs/code/calc_nxt1965ci_overlay_budget_audit_v1.py) · [12 子系统纯 SRS 数据底座](outputs/code/srs_full_data_nxt1965ci_v1.py) · [完整版 SRS 生成器](outputs/code/build_nxt1965ci_full_srs_v1.py) · [计算报告生成器](outputs/code/build_nxt1965ci_calc_report_pdf_v1.py)
+- **核心新增与核验**：① 补齐此前未纳入的其余 6 大子系统（IH、WT-TC/WH、WC、RC/RH、IL/LS、MF/ENV），明确各子系统 `T1/T2/T3` 边界并通过自动化零预算泄露门禁校验；② 配套计算报告独立给出 A/B/C 三级来源审计、`Ref009 Fig. 3` 方差核校（偏差 `≤ ±0.30%`）、六大共享枢纽防重复计数矩阵、12 子系统正算回收整机套刻（**DCO `2.257` / SMO `2.364` / MMO `4.291 nm`**）、共享源相关性 `ρ` 扫描（`ρ = 2.5%` 撞线）、20 万次蒙特卡洛（`100%` 达标）与 `±10%` 龙卷风敏感度排序；此前六大子系统版本按 `UP-008` 完整保留存档。
+
+---
+
 <a name="2026-11-27-nxt1965ci-six-subsys-spec-docx-suite"></a>
 
 ## 2026-11-27　发布 ASML NXT:1965Ci 六大核心子系统套刻预算规格需求书 Word 套册（1 份整机总册 + 6 份子系统独立下发分册，v1）
